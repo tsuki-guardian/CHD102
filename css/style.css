@@ -169,8 +169,9 @@ a{
     left: 0;
     top: -200px;
 }
+
 .makima-bg{
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -228,4 +229,37 @@ a{
     padding: 20px 60px;
     text-decoration: underline;
     font-weight: 900;
+}
+/* ====================s-p-p===================== */
+.popular-peripherals{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+.pp-container{
+    max-width: 1280px;
+}
+.pp-main-title{
+    display: inline-block;
+    font-size: 0;
+    font-weight: 900;
+}
+.pp-main-title-l{
+    display: inline-block;
+    color: #000;
+    -webkit-text-stroke: 2px #deaa40;
+    font-size: 80px;
+}
+.pp-main-title-r{
+    display: inline-block;
+    color: #fff;
+    border-bottom:5px solid #deaa40;
+    font-size: 80px;
+    padding-bottom: 5px;
+}
+.pp-sub-title{
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+    padding-top: 5px;
 }
