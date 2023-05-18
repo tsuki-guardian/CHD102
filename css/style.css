@@ -222,6 +222,8 @@ a{
     content: "";
     position: absolute;
     border: 2px solid #fff;
+    pointer-events: none;
+    /* 禁用偽元素的滑鼠事件 */
 }
 .card-pic::before {
     top: 0;
