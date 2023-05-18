@@ -147,17 +147,18 @@ a{
     font-weight: 500;
     line-height: 1.75;
 }
-.fig-intro .btn{
+.fig-container .btn{
     position: absolute;
     display: block;
     color: #000;
-    right: 40px;
-    bottom: -40px;
+    right: 140px;
+    bottom: 340px;
     background-color: #deaa40;
     padding: 20px 60px;
     text-decoration: underline;
     font-size: 24px;
     font-weight: 900;
+    z-index: 10;
 }
 /* ====================s-p-p===================== */
 .popular-peripherals{

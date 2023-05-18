@@ -16,7 +16,6 @@ a{
 }
 .header-main{
     max-width: 1440px;
-    width: 100%;
     margin: auto;
     background-color: #000;
     height: 80px;
@@ -25,6 +24,9 @@ a{
     justify-content: center;
     align-items: center;
     top: 0;
+}
+.logo{
+    margin-right: auto;
 }
 .logo a{
     display: block;
@@ -75,6 +77,29 @@ a{
     top: 0;
     right: 0;
     cursor: pointer;
+}
+.login{
+    margin-left: 30px;
+    color:#fff;
+    cursor: pointer;
+}
+.shopping-cart{
+    display: flex;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #EB6565;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.shopping-cart p{
+    margin-left: 5px;
 }
 /* ====================footer===================== */
 .todomain-footer{
