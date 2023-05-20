@@ -1,5 +1,5 @@
 body{
-    font-family: Inter,Noto Sans,Microsoft JhengHei,sans-serif,serif;
+    font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
     width: 100%;
     font-size: 16px;
     background-image: url("../pic/goldLight.jpg");
@@ -65,6 +65,7 @@ a{
     line-height: 1.75;
     top: -30px;
     font-size: 24px;
+    font-weight: 700;
 }
 .gd-intro .gd-intro-title{
     font-size: 32px;
@@ -84,7 +85,7 @@ a{
     background-color: #deaa40;
     padding: 20px 60px;
     text-decoration: underline;
-    font-weight: 900;
+    font-weight: 700;
 }
 .fa-angle-right{
     padding-left: 5px;
@@ -144,7 +145,7 @@ a{
     text-align: justify;
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.75;
 }
 .fig-container .btn{
@@ -157,7 +158,7 @@ a{
     padding: 20px 60px;
     text-decoration: underline;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
     z-index: 10;
 }
 /* ====================s-p-p===================== */
@@ -262,15 +263,47 @@ a{
     padding: 15px;
     color: #fff;
 }
-.card-title{
+.card:nth-child(1) .card-intro .card-title{
     padding-bottom: 15px;
     font-size: 24px;
     font-weight: 900;
+    color: #fff;
     text-shadow: -2px -2px 0 #272A70,
               2px -2px 0 #272A70,
               -2px 2px 0 #272A70,
               2px 2px 0 #272A70;
 }
+.card:nth-child(2) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #0473D3,
+    2px -2px 0 #0473D3,
+    -2px 2px 0 #0473D3,
+    2px 2px 0 #0473D3;
+}
+.card:nth-child(3) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #DA56A7,
+    2px -2px 0 #DA56A7,
+    -2px 2px 0 #DA56A7,
+    2px 2px 0 #DA56A7;
+}
+.card:nth-child(4) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #96285D,
+    2px -2px 0 #96285D,
+    -2px 2px 0 #96285D,
+    2px 2px 0 #96285D;
+}
+
 .card-text{
     font-size: 20px;
     font-weight: 400;
@@ -302,7 +335,7 @@ a{
     font-size: 30px;
     text-align: left;
     color: #deaa40;
-    font-weight: 900;
+    font-weight: 700;
     padding: 100px 0 30px;
 }
 .smallCard-wrap{
