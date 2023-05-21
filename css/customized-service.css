@@ -1,0 +1,70 @@
+body{
+    font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
+    font-size: 16px;
+    color: #fff;
+    background-image: url("../pic/bgGoldLine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    margin-top: 80px;
+}
+.customized-service{
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 40px;
+    overflow: hidden; /* 隱藏超出範圍的圖片 */
+}
+.customized-service .container{
+    max-width: 1440px;
+    margin: auto;
+}
+/* =================客製化服務標題================= */
+.cs-title{
+    text-align: center;
+}
+.cs-title-main{
+    display: inline-block;
+    font-size: 0;
+    font-weight: 900;
+}
+.cs-title-main-l{
+    display: inline-block;
+    color: #000;
+    -webkit-text-stroke: 2px #deaa40;
+    font-size: 80px;
+}
+.cs-title-main-r{
+    display: inline-block;
+    color: #fff;
+    border-bottom:5px solid #deaa40;
+    font-size: 80px;
+    padding-bottom: 5px;
+}
+.cs-title-sub{
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+    padding: 5px 0 50px;
+}
+/* =================無限輪播================= */
+.slider-wrap{
+    display: flex;
+    gap: 10px;
+    animation: slideAnimation 50s linear infinite; 
+}
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2020px);
+    }
+}
+.slider-pic {
+    flex-shrink: 0;
+}
+.slider-pic img{
+    width: 100%;
+}
