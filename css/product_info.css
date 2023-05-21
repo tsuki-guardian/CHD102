@@ -260,7 +260,9 @@ main{
 .shopping-instructions ul{
     list-style: disc;
 }
-.shopping-instructions p, h4, li{
+.shopping-instructions p,
+.shopping-instructions h4,
+.shopping-instructions li   {
     padding-left: 14px;
     /* 字首貼齊有border-left的標題 */
     /* list-style-position: inside; */
@@ -269,6 +271,8 @@ main{
 }
 .shopping-instructions li{
     margin-left: 40px;
+    margin-bottom: 10px;  
+    /* padding-bottom: 10px; */
 }
 .shopping-instructions h3{
     border-left:4px solid #DEAA40;
@@ -276,14 +280,14 @@ main{
     padding-left: 10px;
     margin-bottom: 12px;
 }
+.shopping-instructions h4{
+    margin-bottom: 10px;
+}
 .shopping-info{
     margin-bottom: 50px;
 }
 .shipping-info ul{
     margin-bottom: 50px;    
-}
-.shipping-info h4, li{
-    margin-bottom: 10px;    
 }
 /* ==============copyright============== */
 .product-copyright{
