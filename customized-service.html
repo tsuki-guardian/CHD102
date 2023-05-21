@@ -95,9 +95,99 @@
                 <div class="slider-pic"><img src="pic/customized-service/slider10.png" alt=""></div>
             </div>
             <div class="container">
+                <div class="intro-title">
+                    <h2>TODOMAIN專業技術</h2>
+                </div>
+                <div class="technical-intro">
+                    <div class="intro-pic pic-l">
+                        <img src="pic/customized-service/technical.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="intro-text it-r">
+                            <p>To Do
+                                Main額外提供了3D客製化列印服務，是一家致力於提供高品質3D列印服務的公司。我們提供的3D列印服務可以客製化3D模型及玩具，讓客戶可以根據自己的需求和喜好設計出獨一無二的產品。我們使用最新的3D列印技術，能夠實現高精度的打印，並且可以在短時間內完成大量產品的生產。
+                            </p>
+                        </div>
+                        <div class="content-text ct-r">
+                            <p>本公司採用的3D列印技術具有以下優勢：</p>
+                            <p>首先，我們採用的3D列印機具有高精度的打印能力，能夠實現細節處理，產品表面光滑，且完全符合設計要求，能夠滿足客戶對於產品的各種需求。</p>
+                            <p>其次，我們使用的材料環保且多樣化，能夠適應不同產品的生產需要，比如PLA、ABS、PVA等材料，且能夠根據客戶要求使用多種材料進行打印，使得產品具有更多樣的功能和用途。</p>
+                            <p>最後，我們採用的3D列印技術可以實現批量生產，大幅降低了生產成本和時間。我們能夠滿足不同客群對於產品的大量需求，例如商業用途、學術研究和個人需求等等。</p>
+                        </div>
+                    </div>
+                    <div class="text-bg bg-r">
+                        <img src="pic/customized-service/gray-r.png" alt="">
+                    </div>
+                </div>
+                <div class="machine-intro">
+                    <div class="intro-pic pic-r">
+                        <img src="pic/customized-service/machine.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="intro-text it-l">
+                            <p>To Do
+                                Main額外提供了3D客製化列印服務，是一家致力於提供高品質3D列印服務的公司。我們提供的3D列印服務可以客製化3D模型及玩具，讓客戶可以根據自己的需求和喜好設計出獨一無二的產品。我們使用最新的3D列印技術，能夠實現高精度的打印，並且可以在短時間內完成大量產品的生產。
+                            </p>
+                        </div>
+                        <div class="content-text ct-l">
+                            <p>本公司採用的3D列印技術具有以下優勢：</p>
+                            <p>首先，我們採用的3D列印機具有高精度的打印能力，能夠實現細節處理，產品表面光滑，且完全符合設計要求，能夠滿足客戶對於產品的各種需求。</p>
+                            <p>其次，我們使用的材料環保且多樣化，能夠適應不同產品的生產需要，比如PLA、ABS、PVA等材料，且能夠根據客戶要求使用多種材料進行打印，使得產品具有更多樣的功能和用途。</p>
+                            <p>最後，我們採用的3D列印技術可以實現批量生產，大幅降低了生產成本和時間。我們能夠滿足不同客群對於產品的大量需求，例如商業用途、學術研究和個人需求等等。</p>
+                        </div>
+                    </div>
+                    <div class="text-bg bg-l">
+                        <img src="pic/customized-service/gray-r.png" alt="">
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="now-customization-btn">
+                        <i class="fa-sharp fa-solid fa-angles-right"></i>
+                        <p>立即訂製</p>
+                        <i class="fa-sharp fa-solid fa-angles-left"></i>
+                    </div>
+                </a>
+
             </div>
         </section>
+        <div class="go-top-btn">
+            <button onclick="topFunction()" id="myBtn" title="回到首頁"><i class="fa-solid fa-angles-up"></i></button>
+        </div>
     </main>
+    <footer class="todomain-footer">
+        <div class="footer-line">
+            <img src="pic/linear-gradient-gold.png" alt="footer-line">
+        </div>
+        <div class="footer-logo">
+            <img src="pic/todomain_logo_white.png" alt="logo">
+        </div>
+        <div class="copy-right">
+            <p>©SOTSU・SUNRISE ©SOTSU・SUNRISE・MBS ©SOTSU・SUNRISE・TV TOKYOCopyright ©Bandai Namco Filmworks Inc. All
+                rights reserved.</p>
+            <p>＊Note:No reproduction of contents and images is allowed.</p>
+        </div>
+    </footer>
+    <script class="goTop">
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // 向下滾動20px時顯示按鈕
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // 點擊時回到最頂部
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 
 </html>
