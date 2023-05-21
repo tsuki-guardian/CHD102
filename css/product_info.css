@@ -37,9 +37,6 @@ main{
 .breadcrumb li a{
     text-decoration: underline;
     display: inline;
-}
-.breadcrumb li a:visited {
-    color: inherit;  /* 保留父元素的顏色，也可以指定其他的顏色值 */
     color: #777;
 }
 /* ==============商品內容============== */
