@@ -22,7 +22,7 @@ main{
     max-width: 1440px;
     margin: auto;
 }
-/* 麵包屑 */
+/* ==============麵包屑============== */
 .breadcrumb {
     margin-bottom: 15px;
 }
@@ -42,16 +42,19 @@ main{
     color: inherit;  /* 保留父元素的顏色，也可以指定其他的顏色值 */
     color: #777;
 }
-/* 商品內容 */
+/* ==============商品內容============== */
 .product-info-container{
     font-size: 0;
 }
-.title-product-intro{
+.title-product-intro,
+.title-product-detail,
+.title-product-recommended{
     font-size: 0;
 }
 .gold-line{
     font-size: 0;
 }
+/* ==============商品介紹標題============== */
 .title-product-intro-text{
     color:#deaa40;
     font-size: 32px;
@@ -68,7 +71,7 @@ main{
     justify-content: space-between;
 }
 .product-name-wrap{
-    padding: 15px 20px;
+    padding: 30px 20px 0 20px;
 }
 .product-name{
     display: flex;
@@ -111,7 +114,6 @@ main{
 }
 .release-date{
     margin-top: auto;
-    margin-bottom: 15px;
     margin-right: 20px;
     padding: 10px;
     color: #fff;
@@ -119,9 +121,11 @@ main{
     border: 1px solid #88A9FF;
 
 }
+/* ==============商品圖片區============== */
 .product-middle-info{
     display: flex;
-    padding: 0 20px;
+    padding: 30px 20px;
+
 }
 .product-large-pic{
     width: 59%;
@@ -192,20 +196,21 @@ main{
 .price-btn{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     white-space: nowrap;
 }
 .add-to-cart{
     box-sizing: border-box;
     width: 220px;
-    padding: 15px 30px;
+    padding: 20px 30px;
     border: 1px solid #DEAA40;
     cursor: pointer;
 }
 .checkout{
     box-sizing: border-box;
     width: 220px;
-    padding: 15px 30px;
+    padding: 20px 30px;
     background-color: #DEAA40;
     color: #000;
     font-weight: 600;
@@ -216,4 +221,159 @@ main{
 }
 .add-to-favorite p{
     padding-top: 10px;
+}
+/* ==============商品詳情標題============== */
+.product-detail{
+    font-size: 16px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ==============商品詳情-左欄============== */
+.product-detail-info{
+    width: 45%;
+}
+.product-intro-text{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #DEAA40;
+    margin-bottom: 50px;
+}
+.product-specifications{
+    font-size: 16px;
+}
+.product-specifications p {
+    margin-bottom: 30px;
+}
+.notice-of-manufacturing{
+    list-style: disc;
+}
+.notice-of-manufacturing li{
+    padding-bottom: 10px;
+    margin-left: 24px;
+}
+/* ==============商品詳情-右欄============== */
+.shopping-instructions{
+    width: 45%;
+    font-size: 20px;
+}
+.shopping-instructions ul{
+    list-style: disc;
+}
+.shopping-instructions p, h4, li{
+    padding-left: 14px;
+    /* 字首貼齊有border-left的標題 */
+    /* list-style-position: inside; */
+    /* 讓li的點貼齊內文 */
+    /* vertical-align: middle; */
+}
+.shopping-instructions li{
+    margin-left: 40px;
+}
+.shopping-instructions h3{
+    border-left:4px solid #DEAA40;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+.shopping-info{
+    margin-bottom: 50px;
+}
+.shipping-info ul{
+    margin-bottom: 50px;    
+}
+.shipping-info h4, li{
+    margin-bottom: 10px;    
+}
+/* ==============copyright============== */
+.product-copyright{
+    font-size: 16px;
+}
+/* ==============推薦商品============== */
+.smallCard-wrap{
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template: repeat(1,1fr) / repeat(7,1fr);
+    margin: 30px 0;
+}
+.smallCard{
+    box-sizing: border-box;
+    width: 190px;
+    background-color: #000;
+    padding: 10px;
+    border: 1px solid #deaa40;
+}
+.smallCard-title{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    border-left: 3px solid #deaa40;
+    padding-left: 5px;
+    }
+.smallCard-title-main{
+    color: #deaa40;
+}
+.smallCard-title-type{
+    padding-top: 5px;
+    color: #fff;
+}
+.smallCard-detail-btn{
+    width: 170px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+    line-height: 2;
+    background-color: #deaa40;
+    margin-top: 10px;
+}
+.card-pic{
+    position: relative;
+    font-size: 0;
+}
+.card-pic img{
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+.card-pic::before,
+.card-pic::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    pointer-events: none;
+    /* 禁用偽元素的滑鼠事件 */
+}
+.card-pic::before {
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 1;
+}
+.card-pic::after {
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 1;
+}
+.decorateLB{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.decorateRT{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #000;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
