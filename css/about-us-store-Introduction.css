@@ -1,7 +1,7 @@
 body{
     font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
     font-size: 16px;
-    background-image: url("../pic/Mahiru-bg.png"), url("../pic/bgBlue.jpg");
+    background-image: url("../pic/Nanami-bg.png"), url("../pic/bgBlue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -55,6 +55,7 @@ body{
     grid-template: repeat(10,1fr)/repeat(2,1fr);
     align-items: center;
     justify-items: center;
+    white-space: nowrap;
 }
 .side-item a{
     color: #fff;
@@ -79,10 +80,10 @@ body{
 }
 .btn-Story{
     grid-area: 2/2/3/3;
-    color: #deaa40;
 }
 .btn-Introduction{
     grid-area: 4/2/5/3;
+    color: #deaa40;
 }
 .btn-Instructions{
     grid-area: 6/2/7/3;
