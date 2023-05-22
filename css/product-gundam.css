@@ -1,0 +1,159 @@
+body{
+    font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
+    font-size: 16px;
+    color: #fff;
+    background-image: url("../pic/bgGoldLine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    margin-top: 80px;
+}
+.product{
+    max-width: 1920px;
+    margin: auto;
+}
+.product .container{
+    max-width: 1440px;
+    margin: auto;
+}
+.product-list{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.product-list li{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.product-list img{
+    /* vertical-align: middle; */
+}
+.hot-title{
+    background-color: #DEAA40;
+    padding: 4px 30px 4px 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hot-title .main_text{
+    border-left: 4px solid #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.hot-title .sub_text{
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff8;
+}
+.filter{
+    padding-top: 20px;
+}
+/* =========篩選器=================== */
+.filter {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 30px;
+    color: #333;
+}
+.custom-select {
+    width: 12%;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.select-trigger {
+    position: relative;
+    background-color: #DEAA4033;
+    border: 1px solid #DEAA40;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.fa-solid{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.options {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    color: #fff;
+    background-color: #DEAA4033;
+    border: 1px solid #DEAA40;
+    box-sizing: border-box;
+}
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+  /* =========篩選器按鈕=================== */
+.filter-btn{
+    width: 8.333333%;
+    display: inline-block;
+    background-color: #DEAA4080;
+    border: 1px solid #DEAA40;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.filter-cancel{
+    width: 8.333333%;
+    display: inline-block;
+    background-color: #de404080;
+    border: 1px solid #de4040;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.filter-btn:active{
+    background-color: #DEAA40;
+}
+.filter-cancel:active{
+    background-color: #de4040;
+}
+  /* =========分類選項=================== */
+.category{
+    font-size: 0;
+}
+.category > div{
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.category .all{
+    border-bottom: 3px solid #DEAA40;
+    color: #DEAA40;
+}
+.category .hot{
+    border-bottom: 1px solid #777;
+    color: #777;
+}
+.category .new{
+    border-bottom: 1px solid #777;
+    color: #777;
+}
