@@ -93,9 +93,10 @@ main{
     left: 0;
     display: none;
     color: #fff;
-    background-color: #DEAA4033;
+    background-color: #DEAA40;
     border: 1px solid #DEAA40;
     box-sizing: border-box;
+    z-index: 50;
 }
 .option {
     padding: 10px;
@@ -157,3 +158,35 @@ main{
     border-bottom: 1px solid #777;
     color: #777;
 }
+  /* =========卡片=================== */
+  .row{
+    margin-top: 30px;
+  }
+  .card{
+    width: 100%;
+    background-color: #333;
+  }
+  .card .pic{
+    position: relative;
+  }
+  .card img{
+    width: 100%;
+  }
+  .card .pic .cart{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .card .text{
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .card .price{
+    text-align: end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: #DEAA40;
+    font-size: 20px;
+    font-weight: 700;
+  }
