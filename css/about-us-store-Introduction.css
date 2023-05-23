@@ -23,7 +23,7 @@ body{
 .Brand-Story-text{
     width: 950px;
     text-align: center;
-    top: 250px;
+    top: 50px;
     left: 300px;
     position: relative;
 }
@@ -32,7 +32,7 @@ body{
     font-size: 40px;
     color: #deaa40;
     font-weight: 900;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .text{

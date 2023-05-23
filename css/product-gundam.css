@@ -26,13 +26,14 @@ main{
     justify-content: start;
     gap: 20px;
 }
-.product-list li{
-    display: flex;
-    align-items: center;
-    gap: 3px;
+.product-list li a{
+    color: #fff;
+}
+.product-list li span{
+    padding-left: 10px;
 }
 .product-list img{
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 .hot-title{
     background-color: #DEAA40;
@@ -55,15 +56,13 @@ main{
     font-style: italic;
     color: #fff8;
 }
-.filter{
-    padding-top: 20px;
-}
 /* =========篩選器=================== */
 .filter {
     /* display: flex; */
     /* align-items: center; */
     margin-bottom: 30px;
     color: #333;
+    padding-top: 20px;
 }
 .custom-select {
     width: 12%;
@@ -80,7 +79,7 @@ main{
     cursor: pointer;
     box-sizing: border-box;
 }
-.fa-solid{
+.fa-angle-down{
     position: absolute;
     top: 50%;
     right: 10px;
@@ -149,28 +148,46 @@ main{
 .category .all{
     border-bottom: 3px solid #DEAA40;
     color: #DEAA40;
+    cursor: pointer;
 }
 .category .hot{
     border-bottom: 1px solid #777;
     color: #777;
+    cursor: pointer;
 }
 .category .new{
     border-bottom: 1px solid #777;
     color: #777;
+    cursor: pointer;
 }
   /* =========卡片=================== */
   .row{
     margin-top: 30px;
+    flex-grow: 1;
   }
   .card{
     width: 100%;
     background-color: #333;
+    position: relative;
+    /* 以下設置讓卡片等高 */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
   }
   .card .pic{
-    position: relative;
-  }
-  .card img{
     width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .card .product_img{
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    transition: transform 0.2s;
+  }
+  .card .product_img:hover{
+    transform: scale(1.05);
   }
   .card .pic .cart{
     position: absolute;
@@ -184,9 +201,10 @@ main{
   }
   .card .price{
     text-align: end;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 5px;
     color: #DEAA40;
     font-size: 20px;
     font-weight: 700;
+    /* 讓卡片等高時，價格保持在最底部 */
+    margin-top: auto;
   }
