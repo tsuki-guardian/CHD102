@@ -12,14 +12,18 @@ a{
     text-decoration: none;
 }
 /* =====================slider===================== */
-.banner-slider{
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    padding-top: 80px;
-    overflow: hidden;
+.owl-carousel{
+    position: relative;
+}
+.owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
 }
 /* =====================s-g===================== */
+main{
+    margin-top: 80px;
+}
 .theme{
     /* width: 100%; */
     text-align: center;
