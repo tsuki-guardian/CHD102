@@ -26,13 +26,14 @@ main{
     justify-content: start;
     gap: 20px;
 }
-.product-list li{
-    display: flex;
-    align-items: center;
-    gap: 3px;
+.product-list li a{
+    color: #fff;
+}
+.product-list li span{
+    padding-left: 10px;
 }
 .product-list img{
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 .hot-title{
     background-color: #DEAA40;
