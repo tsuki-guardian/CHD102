@@ -542,11 +542,11 @@
             autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: false,
-            responsive:{
-        0:{
-            items:1
-        }
-    }
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
         });
         $('.play').on('click', function () {
             owl.trigger('play.owl.autoplay', [1000])
