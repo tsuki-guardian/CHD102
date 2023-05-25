@@ -129,6 +129,9 @@ main{
     bottom: 0;
     z-index: 4;
 }
+.makima-bg{
+    width: 100%;
+}
 .fig-makima img{
     pointer-events: none;
 }
@@ -137,7 +140,6 @@ main{
     position: absolute;
     text-align: right;
     left: 820px;
-    right: 100px;
     top: 200px;
     font-weight: 900;
     z-index: 3;
