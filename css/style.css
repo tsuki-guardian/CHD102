@@ -122,6 +122,9 @@ main{
     left: 0;
     top: -200px;
 }
+.fig-bg img{
+    width: 100%;
+}
 .fig-makima{
     position: absolute;
     left: 0;
