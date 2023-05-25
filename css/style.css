@@ -122,23 +122,21 @@ main{
     left: 0;
     top: -200px;
 }
-.fig-bg img{
-    width: 100%;
-}
 .fig-makima{
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
     z-index: 4;
 }
 .fig-makima img{
-    width: 100%;
     pointer-events: none;
 }
 .fig-wrapper{
     width: 1000px;
     position: absolute;
     text-align: right;
+    left: 820px;
     right: 100px;
     top: 200px;
     font-weight: 900;
