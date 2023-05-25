@@ -304,6 +304,10 @@ main{
     padding: 10px;
     border: 1px solid #deaa40;
 }
+.smallCard:hover{
+    transform: scale(1.02);
+    transition: .2s;
+}
 .smallCard-title{
     margin-top: 10px;
     font-size: 14px;
@@ -328,6 +332,7 @@ main{
     line-height: 2;
     background-color: #deaa40;
     margin-top: 10px;
+    cursor: pointer;
 }
 .card-pic{
     position: relative;

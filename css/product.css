@@ -82,3 +82,26 @@ main{
     pointer-events: none;
     /* 禁用偽元素的滑鼠事件 */
 }
+.product-bot{
+    margin-top: 60px;
+    text-align: center;
+}
+/* .product-bot a{
+    display: block;
+    text-align: center;
+} */
+.product-bot .get-more-btn{
+    display: inline-block;
+    /* margin: auto; */
+    font-size: 20px;
+    background-color: #deaa4033;
+    border: 1px solid #deaa40;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 40px;
+
+}
+.get-more-btn:hover{
+    background-color: #deaa40;
+    transition: .2s;
+}
