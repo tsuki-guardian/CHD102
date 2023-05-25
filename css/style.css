@@ -20,6 +20,23 @@ a{
     left: 50%;
     bottom: 30px;
 }
+.owl-nav{
+    width: 100%;
+    font-size: 60px;
+    color: #deaa40;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-prev{
+    position: relative;
+    left: 5%;
+}
+.owl-next{
+    position: relative;
+    right: 5%;
+}
 /* =====================s-g===================== */
 main{
     margin-top: 80px;

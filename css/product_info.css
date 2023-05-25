@@ -76,7 +76,7 @@ main{
 .product-name-title{
     font-size: 32px;
     color:#deaa40;
-    font-weight: 600;
+    font-weight: 700;
 }
 .product-tag{
     display: flex;
@@ -184,7 +184,7 @@ main{
     margin-bottom: 30px;
 }
 .price .price-twd{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 30px;
     color: #DEAA40;
     margin-left: 20px;
@@ -210,7 +210,7 @@ main{
     padding: 20px 30px;
     background-color: #DEAA40;
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
 }
 .add-to-favorite i{
