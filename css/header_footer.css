@@ -5,6 +5,19 @@ a{
     text-decoration: none;
 }
 /* =====================header===================== */
+@media screen and (min-width:768px){
+    .todomain-header{
+        min-width: 768px ;
+        width: 100%;
+        background-color: #000;
+        opacity: .9;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+    }
+}
+
+
 .todomain-header{
     width: 100%;
     background-color: #000;
