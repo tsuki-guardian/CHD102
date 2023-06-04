@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/col.css">
     <!-- use google fonts "Inter & Noto Sans" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,42 +28,44 @@
 
 <body>
     <header class="todomain-header">
-        <div class="header-main">
+        <div class="header-wrap">
             <div class="logo">
                 <a href="index.html">
                     <img src="pic/todomain_logo_gold.png" alt="logo">
                 </a>
             </div>
-            <nav class="navList">
-                <ul class="navList-content">
-                    <li>
-                        <a href="about-us.html"><span>About</span><br>關於我們</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>News</span><br>最新消息</a>
-                    </li>
-                    <li>
-                        <a href="product.html"><span>Product</span><br>產品列表</a>
-                    </li>
-                    <li>
-                        <a href="customized-service.html"><span>Customized</span><br>客製化</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>Contact us</span><br>聯絡我們</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="search">
-                <input class="search-bar" type="search" id="search" placeholder="搜尋商品">
-                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="login">
-                <i class="fa-solid fa-user"></i><span class="login-btn">登入/註冊</span>
-            </div>
-            <div class="shopping-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div class="cart-quantity"><span>0</span></div>
-                <p>購物車</p>
+            <div class="header-main">
+                <nav class="navList">
+                    <ul class="navList-content">
+                        <li>
+                            <a href="about-us.html"><span>About</span><br>關於我們</a>
+                        </li>
+                        <li>
+                            <a href="#"><span>News</span><br>最新消息</a>
+                        </li>
+                        <li>
+                            <a href="product.html"><span>Product</span><br>產品列表</a>
+                        </li>
+                        <li>
+                            <a href="customized-service.html"><span>Customized</span><br>客製化</a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Contact us</span><br>聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <input class="search-bar" type="search" id="search" placeholder="搜尋商品">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="login">
+                    <i class="fa-solid fa-user"></i><span class="login-btn">登入/註冊</span>
+                </div>
+                <div class="shopping-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-quantity"><span>0</span></div>
+                    <div class="cart-word">購物車</div>
+                </div>
             </div>
         </div>
     </header>
@@ -187,303 +190,297 @@
             </div>
         </section>
         <div class="theme imminent-deadline-product">
-            <div class="idp-container">
+            <div class="idp-container container">
                 <div class="idp-title">
                     即將截止預購的「 商品 」！
                 </div>
-                <div class="smallCard-wrap">
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">初音未來 15周年紀念</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_denji.png" alt="denji">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">鏈鋸人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                <div class="smallCard-wrap row row-cols-2 row-cols-md-4 row-cols-lg-6">
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">初音未來 15周年紀念</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_eren.png" alt="eren">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">進擊的巨人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_fujioka.png" alt="fujioka">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">櫻蘭高校男公關部</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_eren.png" alt="eren">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">進擊的巨人</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_megumin.png" alt="megumin">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">為美好的世界獻上祝福</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_sakura.png" alt="sakura">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">庫洛魔法使</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_fujioka.png" alt="fujioka">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">櫻蘭高校男公關部</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_nanachi.png" alt="nanachi">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">來自深淵</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">初音未來 15周年紀念</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_megumin.png" alt="megumin">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">為美好的世界獻上祝福</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_denji.png" alt="denji">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">鏈鋸人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_eren.png" alt="eren">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">進擊的巨人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_sakura.png" alt="sakura">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">庫洛魔法使</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_fujioka.png" alt="fujioka">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">櫻蘭高校男公關部</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_megumin.png" alt="megumin">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">為美好的世界獻上祝福</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_nanachi.png" alt="nanachi">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">來自深淵</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_sakura.png" alt="sakura">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">庫洛魔法使</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_nanachi.png" alt="nanachi">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">來自深淵</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">初音未來 15周年紀念</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">初音未來 15周年紀念</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_denji.png" alt="denji">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">鏈鋸人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_eren.png" alt="eren">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">進擊的巨人</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_eren.png" alt="eren">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">進擊的巨人</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_fujioka.png" alt="fujioka">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">櫻蘭高校男公關部</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_fujioka.png" alt="fujioka">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">櫻蘭高校男公關部</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_megumin.png" alt="megumin">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">為美好的世界獻上祝福</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
-                        </div>
-                    </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_sakura.png" alt="sakura">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
-                        </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">庫洛魔法使</div>
-                            <div class="smallCard-title-type">玩偶</div>
-                        </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_megumin.png" alt="megumin">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">為美好的世界獻上祝福</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
-                    <div class="smallCard">
-                        <div class="smallCard-pic card-pic">
-                            <img src="pic/sl_nanachi.png" alt="nanachi">
-                            <div class="decorateLB"></div>
-                            <div class="decorateRT"></div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_sakura.png" alt="sakura">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">庫洛魔法使</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
-                        <div class="smallCard-title">
-                            <div class="smallCard-title-main">來自深淵</div>
-                            <div class="smallCard-title-type">玩偶</div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_nanachi.png" alt="nanachi">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">來自深淵</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
-                        <div class="smallCard-detail-btn">
-                            商品詳情
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/miku_15th_Anniversary.png" alt="miku_15th">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">初音未來 15周年紀念</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_eren.png" alt="eren">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">進擊的巨人</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_fujioka.png" alt="fujioka">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">櫻蘭高校男公關部</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_megumin.png" alt="megumin">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">為美好的世界獻上祝福</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_sakura.png" alt="sakura">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">庫洛魔法使</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="smallCard">
+                            <div class="smallCard-pic card-pic">
+                                <img src="pic/sl_nanachi.png" alt="nanachi">
+                                <div class="decorateLB"></div>
+                                <div class="decorateRT"></div>
+                            </div>
+                            <div class="smallCard-title">
+                                <div class="smallCard-title-main">來自深淵</div>
+                                <div class="smallCard-title-type">玩偶</div>
+                            </div>
+                            <div class="smallCard-detail-btn">
+                                商品詳情
+                            </div>
                         </div>
                     </div>
                 </div>

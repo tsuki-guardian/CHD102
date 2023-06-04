@@ -5,19 +5,15 @@ a{
     text-decoration: none;
 }
 /* =====================header===================== */
-@media screen and (min-width:768px){
-    .todomain-header{
-        min-width: 768px ;
-        width: 100%;
-        background-color: #000;
-        opacity: .9;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-    }
+
+.header-wrap{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
-
-
 .todomain-header{
     width: 100%;
     background-color: #000;
@@ -28,6 +24,7 @@ a{
 }
 .header-main{
     max-width: 1440px;
+    width: 100%;
     margin: auto;
     background-color: #000;
     height: 80px;
@@ -38,25 +35,29 @@ a{
     top: 0;
 }
 .logo{
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 .logo a{
     display: block;
     font-size: 0;
 }
 .navList{
+    width: 100%;
     text-align: center;
-    padding: 0 50px;
+    /* padding: 0 50px; */
+    margin: auto;
 }
 .navList-content {
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;
     white-space: nowrap;
-    gap: 50px;
+    /* gap: 50px; */
 }
 .navList-content li{
     position: relative;
+    margin: 0 3.472222%;
 }
 .navList-content li::after{
     content: "";
@@ -100,10 +101,13 @@ a{
     height: 100%;
 }
 .search{
+    /* width: 100%; */
+    width: 32.5%;
     display: flex;
     align-items: center;
     font-size: 0;
     position: relative;
+    margin: 0 10px;
 }
 .search-bar{
     width: 100%;
@@ -135,11 +139,16 @@ a{
     margin-left: 30px;
     color:#fff;
     cursor: pointer;
+    display: flex;
+    margin: 0 10px;
+}
+.login span{
+    white-space: nowrap;
 }
 .shopping-cart{
     display: flex;
     color: #fff;
-    margin-left: 10px;
+    margin: 0 10px;
     cursor: pointer;
 }
 .cart-quantity{
@@ -151,8 +160,9 @@ a{
     border-radius: 10px;
     margin-left: 5px;
 }
-.shopping-cart p{
+.cart-word{
     margin-left: 5px;
+    white-space: nowrap;
 }
 /* ====================footer===================== */
 .todomain-footer{
@@ -204,3 +214,35 @@ a{
   .fa-angles-up{
     font-size: 30px;
   }
+
+  /* ========================================== */
+  @media screen and (min-width:768px){
+    .header-wrap{
+        flex-wrap: wrap;
+    }
+    .todomain-header{
+        min-width: 768px ;
+    }
+    .search{
+        /* width: 100%; */
+        width: 32.5%;
+        display: flex;
+        align-items: center;
+        font-size: 0;
+        /* position: relative; */
+    }
+
+}
+@media screen and (min-width:1024px){
+
+}
+@media screen and (min-width:1200px){
+    .header-wrap{
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: auto;
+    }
+}
+@media screen and (min-width:1440px){
+
+}

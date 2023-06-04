@@ -41,9 +41,10 @@ a{
 /* =====================s-g===================== */
 main{
     margin-top: 80px;
+    width: 100%;
 }
 .theme{
-    /* width: 100%; */
+    width: 100%;
     text-align: center;
 }
 .gd-container{
@@ -113,14 +114,20 @@ main{
     padding-left: 5px;
 }
 /* =====================s-f===================== */
+.theme_figure{
+    max-height: 898px;
+    height: 898px;
+}
 .fig-container{
     /* background-color: #000; */
     /* background-image: linear-gradient(to bottom #000 70%,transparent 100%); */
     position: relative;
     max-width: 1920px;
+    max-height: 898px;
     margin: auto;
     left: 0;
-    top: -200px;
+    /* top: -200px; */
+    top: -22.3%;
 }
 .fig-makima{
     position: absolute;
@@ -134,12 +141,14 @@ main{
 }
 .fig-makima img{
     pointer-events: none;
+    max-width: 100%;
+    height: 100%;
 }
 .fig-wrapper{
     width: 1000px;
     position: absolute;
     text-align: right;
-    left: 820px;
+    right: 100px;
     top: 200px;
     font-weight: 900;
     z-index: 3;
@@ -222,18 +231,22 @@ main{
     font-style: italic;
     padding: 5px 0 50px;
 }
+/* =====================卡片===================== */
 .pp-card-list{
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 45px;
+    /* gap: 45px; */
 }
 .card{
     box-sizing: border-box;
-    width: 330px;
+    /* width: 330px; */
+    width: 21.916666%;
     height: 560px;
     background-color: #000;
     padding: 10px;
     box-shadow: 5px 5px 0px 0px #deaa40;
+    margin: 0 1.5625%;
 }
 .card-pic{
     position: relative;
@@ -286,7 +299,8 @@ main{
 }
 .card-intro{
     line-height: 1.25;
-    padding: 15px;
+    margin-top: 15px;
+    /* padding: 15px; */
     color: #fff;
 }
 .card:nth-child(1) .card-intro .card-title{
@@ -365,16 +379,21 @@ main{
     padding: 100px 0 30px;
 }
 .smallCard-wrap{
-    display: grid;
+    /* display: grid;
     grid-gap: 20px 10px;
-    grid-template: repeat(3,1fr) / repeat(7,1fr);
+    grid-template: repeat(3,1fr) / repeat(7,1fr); */
 }
 .smallCard{
     box-sizing: border-box;
-    width: 190px;
+    /* width: 190px; */
+    width: 100%;
     background-color: #000;
     padding: 10px;
     border: 1px solid #deaa40;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .smallCard:hover{
     transform: scale(1.02);
@@ -382,6 +401,7 @@ main{
 }
 .smallCard-title{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
     text-align: left;
     border-left: 3px solid #deaa40;
@@ -395,11 +415,13 @@ main{
     color: #fff;
 }
 .smallCard-detail-btn{
-    width: 170px;
-    height: 35px;
+    /* width: 170px; */
+    width: 100%;
+    /* height: 35px; */
     font-weight: 400;
     line-height: 2;
     background-color: #deaa40;
     margin-top: 10px;
     cursor: pointer;
+    margin-top: auto;
 }
