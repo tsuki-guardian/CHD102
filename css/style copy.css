@@ -40,18 +40,8 @@ a{
 }
 /* =====================s-g===================== */
 main{
-    margin-top: 0;
+    margin-top: 80px;
     width: 100%;
-}
-@media screen and (min-width: 768px){
-    main{
-        margin-top: 150px;
-    }
-}
-@media screen and (min-width: 1200px){
-    main{
-        margin-top: 80px;
-    }
 }
 .theme{
     width: 100%;
@@ -60,104 +50,45 @@ main{
 .gd-container{
     position: relative;
     max-width: 1920px;
-    width: 100%;
     margin: auto;
-    /* 768 */
-    /* background-image: url("../pic/freedom_bk_mobile.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 100%; */
-}
-.gd-container .bg_img_lg{
-    display: none;
-}
-@media screen and (min-width: 768px){
-    .gd-container .bg_img_md{
-        display: none;
-    }
-    .gd-container .bg_img_lg{
-        display: block;
-    }
 }
 .gd-container img {
     width: 100%;
 }
-
 .gd-wrapper{
+    padding-top: 30px;
+    width: 600px;
     position: absolute;
-    width: 100%;
     text-align: left;
-    font-weight: 900;
+    left: 240px;
     top: 0;
-    
-
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    /* ↑增加 */
-}
-@media screen and (min-width: 768px){
-    .gd-wrapper{
-        padding-top: 30px;
-        width: 600px;
-        left: 240px;
-        height: 100%;
-        display: block;
-    }
+    font-weight: 900;
 }
 .gd-title-sub{
-    text-align: center;
-    font-size: 30px;
+    text-align: left;
+    font-size: 60px;
     color: #000000 ;
     -webkit-text-stroke: 2px #deaa40;
-    margin-top: 60px;
 }
-@media screen and (min-width: 768px){
-    .gd-title-sub{
-        text-align: left;
-        font-size: 60px;
-        margin-top: 0;
-    }
-}
-
 .gd-title-main{
-    text-align: center;
-    font-size: 60px;
+    position: relative;
+    text-align: right;
+    font-size: 100px;
     color: #deaa40;
-    margin-top: 10px;
-}
-@media screen and (min-width: 768px){
-    .gd-title-main{
-        position: relative;
-        text-align: right;
-        font-size: 100px;
-        right: 0;
-        z-index: 1;
-        margin-top: 0;
-    }
+    right: 0;
+    z-index: 1;
 }
 .gd-intro{
     position: relative;
     box-sizing: border-box;
-    width: 90%;
+    width: 450px;
     border: 1px solid #deaa40;
-    background-color: #000000cc;
-    padding: 30px 30px 100px;
-    line-height: 1.25;
-    font-size: 20px;
+    background-color: #000;
+    padding: 60px 30px 30px;
+    line-height: 1.75;
+    top: -30px;
+    font-size: 24px;
     font-weight: 700;
-    margin: auto auto 0;
-}
-@media screen and (min-width: 768px){
-    .gd-intro{
-        width: 450px;
-        background-color: #000;
-        padding: 60px 30px 30px;
-        line-height: 1.75;
-        top: -30px;
-        font-size: 24px;
-        margin: 0;
-    }
 }
 .gd-intro .gd-intro-title{
     font-size: 32px;
@@ -172,29 +103,18 @@ main{
     position: absolute;
     display: block;
     color: #000;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 10px;
+    right: -60px;
+    bottom: -40px;
     background-color: #deaa40;
     padding: 20px 60px;
     text-decoration: underline;
     font-weight: 700;
-}
-@media screen and (min-width: 768px){
-    .gd-intro .btn{
-        right: 60px;
-        bottom: -40px;
-    }
 }
 .fa-angle-right{
     padding-left: 5px;
 }
 /* =====================s-f===================== */
 .theme_figure{
-    display: none;
-    /* 暫時關掉 */
-        /* 暫時關掉 */
-            /* 暫時關掉 */
     max-height: 898px;
     height: 898px;
 }
