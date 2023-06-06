@@ -22,7 +22,7 @@ a{
 }
 .owl-nav{
     width: 100%;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #deaa40;
     position: absolute;
     top: 50%;
@@ -90,7 +90,6 @@ main{
     font-weight: 900;
     top: 0;
     
-
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -107,33 +106,34 @@ main{
 }
 .gd-title-sub{
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #000000 ;
-    -webkit-text-stroke: 2px #deaa40;
-    margin-top: 60px;
+    -webkit-text-stroke: 0.5px #deaa40;
+    margin-top: 30px;
 }
 @media screen and (min-width: 768px){
     .gd-title-sub{
         text-align: left;
-        font-size: 60px;
+        font-size: 3.75rem;
         margin-top: 0;
     }
 }
-
 .gd-title-main{
     text-align: center;
-    font-size: 60px;
+    font-size: 2.75rem;
     color: #deaa40;
     margin-top: 10px;
+    font-weight: 700;
 }
 @media screen and (min-width: 768px){
     .gd-title-main{
         position: relative;
         text-align: right;
-        font-size: 100px;
+        font-size: 6.25rem;
         right: 0;
         z-index: 1;
         margin-top: 0;
+        font-weight: 900;
     }
 }
 .gd-intro{
@@ -142,9 +142,7 @@ main{
     width: 90%;
     border: 1px solid #deaa40;
     background-color: #000000cc;
-    padding: 30px 30px 100px;
-    line-height: 1.25;
-    font-size: 20px;
+    padding: 20px 20px 60px;
     font-weight: 700;
     margin: auto auto 0;
 }
@@ -153,135 +151,222 @@ main{
         width: 450px;
         background-color: #000;
         padding: 60px 30px 30px;
-        line-height: 1.75;
         top: -30px;
-        font-size: 24px;
         margin: 0;
     }
 }
 .gd-intro .gd-intro-title{
-    font-size: 32px;
+    font-size: 1.5rem;
     color: #deaa40;
     padding-bottom: 10px;
 }
+@media screen and (min-width: 768px){
+    .gd-intro .gd-intro-title{
+        font-size: 2rem;
+    }
+}
 .gd-intro .gd-intro-text{
+    font-size: 1rem;
     text-align: justify;
     color: #fff;
+    line-height: 1.25;
+}
+@media screen and (min-width: 768px){
+    .gd-intro .gd-intro-text{
+        font-size: 1.5rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.75;
+    }
 }
 .gd-intro .btn{
     position: absolute;
-    display: block;
     color: #000;
     right: 50%;
     transform: translateX(50%);
     bottom: 10px;
     background-color: #deaa40;
-    padding: 20px 60px;
+    padding: 10px 30px;
     text-decoration: underline;
     font-weight: 700;
+    font-size: 1.25rem;
 }
 @media screen and (min-width: 768px){
     .gd-intro .btn{
+        padding: 20px 60px;
         right: 60px;
         bottom: -40px;
+        font-size: 1.5rem;
     }
 }
 .fa-angle-right{
     padding-left: 5px;
 }
 /* =====================s-f===================== */
-.theme_figure{
-    display: none;
-    /* 暫時關掉 */
-        /* 暫時關掉 */
-            /* 暫時關掉 */
+/* .theme_figure{
     max-height: 898px;
     height: 898px;
-}
+} */
 .fig-container{
-    /* background-color: #000; */
-    /* background-image: linear-gradient(to bottom #000 70%,transparent 100%); */
     position: relative;
     max-width: 1920px;
-    max-height: 898px;
+    width: 100%;
     margin: auto;
-    left: 0;
-    /* top: -200px; */
-    top: -22.3%;
+}
+@media screen and (min-width: 768px){
+    .fig-container{
+        left: 0;
+        top: -200px;
+        /* top: -22.3%; */
+    }
 }
 .fig-makima{
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 4;
+    display: none;
 }
-.makima-bg{
-    width: 100%;
+@media screen and (min-width: 768px){
+    .fig-makima{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+    }  
 }
 .fig-makima img{
     pointer-events: none;
     max-width: 100%;
     height: 100%;
 }
+.makima-bg_lg{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .makima-bg_lg{
+        display: block;
+        width: 100%;
+    }
+}
+.makima-bg_md{
+    display: block;
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    .makima-bg_md{
+        display: none;
+    }
+}
 .fig-wrapper{
-    width: 1000px;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     text-align: right;
-    right: 100px;
-    top: 200px;
-    font-weight: 900;
-    z-index: 3;
+    top: 0;
+    height: 100%;
+}
+@media screen and (min-width: 768px){
+    .fig-wrapper{
+        display: block;
+        width: 1000px;
+        right: 100px;
+        top: 200px;
+        z-index: 3;
+    }
 }
 .fig-wrapper h2 {
-    text-align: right;
-    font-size: 62px;
+    text-align: center;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px #deaa40;
     color: #000000 ;
-    padding-bottom: 10px;
-    -webkit-text-stroke: 2px #deaa40;
+    margin-top: 30px;
+    font-weight: 900;
+}
+@media screen and (min-width: 768px){
+    .fig-wrapper h2 {
+        font-size: 3.875rem;
+        -webkit-text-stroke: 2px #deaa40;
+        text-align: right;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
 }
 .fig-intro{
+    width: 90%;
     position: relative;
     text-align: left;
     box-sizing: border-box;
-    width: 1000px;
     border: 1px solid #deaa40;
-    background-color: #000;
-    padding: 40px 40px 40px 300px;
+    background-color: #000000cc;
+    padding: 20px 20px 60px;
+    margin: auto auto 0;
+    font-weight: 700;
+}
+@media screen and (min-width: 768px){
+    .fig-intro{
+        width: 1000px;
+        background-color: #000;
+        padding: 40px 40px 40px 300px;
+        margin: 0;
+        font-weight: 900;
+    }
 }
 .fig-intro-title{
     color: #deaa40;
-    font-size: 32px;
-    padding-bottom: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 768px){
+    .fig-intro-title{
+        padding-bottom: 20px;
+    }
 }
 .fig-intro-text{
     text-align: justify;
     color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.75;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+@media screen and (min-width: 768px){
+    .fig-intro-text{
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75;
+    }
 }
 .fig-container .btn{
     position: absolute;
-    display: block;
     color: #000;
-    /* right: 140px; */
-    /* bottom: 340px; */
-    right: 30px;
-    bottom: -30px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 10px;
     background-color: #deaa40;
-    padding: 20px 60px;
+    padding: 10px 30px;
     text-decoration: underline;
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 700;
-    z-index: 50;
 }
+@media screen and (min-width: 768px){
+    .fig-container .btn{
+        padding: 20px 60px;
+        right: 150px;
+        bottom: -30px;
+        z-index: 50;
+    }
+}
+
 /* ====================s-p-p===================== */
 .popular-peripherals{
     max-width: 1920px;
     margin: auto;
     padding-bottom: 30px;
     position: relative;
+    margin-top: 100px;
+}
+@media screen and (min-width: 768px){
+    .popular-peripherals{
+        margin-top: 0;
+    }
 }
 .pp-container{
     max-width: 1440px;
@@ -295,21 +380,35 @@ main{
 .pp-title-main-l{
     display: inline-block;
     color: #000;
-    -webkit-text-stroke: 2px #deaa40;
-    font-size: 80px;
+    -webkit-text-stroke: 1px #deaa40;
+    font-size: 2.75rem;
 }
 .pp-title-main-r{
     display: inline-block;
     color: #fff;
-    border-bottom:5px solid #deaa40;
-    font-size: 80px;
+    border-bottom: 3px solid #deaa40;
+    font-size: 2.75rem;
     padding-bottom: 5px;
 }
 .pp-title-sub{
-    font-size: 30px;
+    font-size: 1.125rem;
     color: #fff;
     font-style: italic;
-    padding: 5px 0 50px;
+    padding: 5px 0 30px;
+}
+@media screen and (min-width: 768px){
+    .pp-title-main-l{
+        font-size: 5rem;
+        -webkit-text-stroke: 2px #deaa40;
+    }
+    .pp-title-main-r{
+        font-size: 5rem;
+        border-bottom: 5px solid #deaa40;
+    }
+    .pp-title-sub{
+        font-size: 1.875rem;
+        padding: 5px 0 50px;
+    }
 }
 /* =====================卡片===================== */
 .pp-card-list{
@@ -321,12 +420,13 @@ main{
 .card{
     box-sizing: border-box;
     /* width: 330px; */
-    width: 21.916666%;
-    height: 560px;
+    /* width: 21.916666%; */
+    /* height: 560px; */
     background-color: #000;
     padding: 10px;
     box-shadow: 5px 5px 0px 0px #deaa40;
-    margin: 0 1.5625%;
+    margin: 0 5px;
+    height: 100%;
 }
 .card-pic{
     position: relative;
@@ -385,7 +485,7 @@ main{
 }
 .card:nth-child(1) .card-intro .card-title{
     padding-bottom: 15px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #fff;
     text-shadow: -2px -2px 0 #272A70,
@@ -395,7 +495,7 @@ main{
 }
 .card:nth-child(2) .card-intro .card-title{
     padding-bottom: 15px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #fff;
     text-shadow: -2px -2px 0 #0473D3,
@@ -405,7 +505,7 @@ main{
 }
 .card:nth-child(3) .card-intro .card-title{
     padding-bottom: 15px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #fff;
     text-shadow: -2px -2px 0 #DA56A7,
@@ -415,7 +515,7 @@ main{
 }
 .card:nth-child(4) .card-intro .card-title{
     padding-bottom: 15px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #fff;
     text-shadow: -2px -2px 0 #96285D,
@@ -425,9 +525,14 @@ main{
 }
 
 .card-text{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: justify;
+}
+@media screen and (min-width: 768px){
+    .card-text{
+        font-size: 1.25rem;
+    }
 }
 .pp-bg{
     position: absolute;
@@ -452,7 +557,7 @@ main{
     padding-bottom: 200px;
 }
 .idp-title{
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: left;
     color: #deaa40;
     font-weight: 700;
@@ -479,7 +584,7 @@ main{
 .smallCard-title{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: left;
     border-left: 3px solid #deaa40;
     padding-left: 5px;
