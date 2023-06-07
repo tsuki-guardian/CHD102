@@ -17,18 +17,31 @@ a{
 }
 .owl-dots{
     position: absolute;
-    left: 50%;
-    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 5px;
+}
+@media screen and (min-width: 768px){
+    .owl-dots{
+        bottom: 30px;
+    }
 }
 .owl-nav{
     width: 100%;
-    font-size: 3.75rem;
+    font-size: 2rem;
     color: #deaa40;
     position: absolute;
     top: 50%;
+    transform: translateY(50%);
     display: flex;
     justify-content: space-between;
-    margin-top: -60px !important;
+    margin-top: -30px !important;
+}
+@media screen and (min-width: 768px){
+    .owl-nav{
+        font-size: 3.75rem;
+        margin-top: -60px !important;
+    }
 }
 .owl-prev{
     position: relative;
@@ -62,11 +75,6 @@ main{
     max-width: 1920px;
     width: 100%;
     margin: auto;
-    /* 768 */
-    /* background-image: url("../pic/freedom_bk_mobile.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 100%; */
 }
 .gd-container .bg_img_lg{
     display: none;
@@ -97,11 +105,31 @@ main{
 }
 @media screen and (min-width: 768px){
     .gd-wrapper{
+        padding-top: 15px;
+        width: 300px;
+        left: 50px;
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-wrapper{
+        padding-top: 15px;
+        width: 450px;
+        left: 50px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-wrapper{
+        padding-top: 20px;
+        width: 520px;
+        left: 120px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .gd-wrapper{
         padding-top: 30px;
         width: 600px;
         left: 240px;
-        height: 100%;
-        display: block;
     }
 }
 .gd-title-sub{
@@ -114,8 +142,29 @@ main{
 @media screen and (min-width: 768px){
     .gd-title-sub{
         text-align: left;
-        font-size: 3.75rem;
+        font-size: 1.875rem;
         margin-top: 0;
+    }
+}
+@media screen and (min-width: 1024px){
+    .gd-title-sub{
+        -webkit-text-stroke: 1px #deaa40;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-title-sub{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-title-sub{
+        -webkit-text-stroke: 2px #deaa40;
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1920px){
+    .gd-title-sub{
+        font-size: 3.75rem;
     }
 }
 .gd-title-main{
@@ -129,11 +178,26 @@ main{
     .gd-title-main{
         position: relative;
         text-align: right;
-        font-size: 6.25rem;
+        font-size: 3.125rem;
         right: 0;
         z-index: 1;
         margin-top: 0;
         font-weight: 900;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-title-main{
+        font-size: 4.175rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-title-main{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width: 1920px){
+    .gd-title-main{
+        font-size: 6.25rem;
     }
 }
 .gd-intro{
@@ -148,11 +212,29 @@ main{
 }
 @media screen and (min-width: 768px){
     .gd-intro{
-        width: 450px;
+        width: 275px;
         background-color: #000;
-        padding: 60px 30px 30px;
-        top: -30px;
+        padding: 20px 15px 15px;
+        top: -15px;
         margin: 0;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-intro{
+        width: 350px;
+        padding: 40px 20px 20px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-intro{
+        width: 400px;
+        padding: 40px 25px 25px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .gd-intro{
+        width: 450px;
+        padding: 60px 30px 30px;
     }
 }
 .gd-intro .gd-intro-title{
@@ -161,6 +243,21 @@ main{
     padding-bottom: 10px;
 }
 @media screen and (min-width: 768px){
+    .gd-intro .gd-intro-title{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-intro .gd-intro-title{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-intro .gd-intro-title{
+        font-size: 1.75rem;
+    }
+}
+@media screen and (min-width: 1920px){
     .gd-intro .gd-intro-title{
         font-size: 2rem;
     }
@@ -173,9 +270,24 @@ main{
 }
 @media screen and (min-width: 768px){
     .gd-intro .gd-intro-text{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-intro .gd-intro-text{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .gd-intro .gd-intro-text{
+        font-size: 1.375rem;
+        line-height: 1.25;
+    }
+}
+@media screen and (min-width: 1920px){
+    .gd-intro .gd-intro-text{
         font-size: 1.5rem;
-        text-align: justify;
-        color: #fff;
         line-height: 1.75;
     }
 }
@@ -190,18 +302,37 @@ main{
     text-decoration: underline;
     font-weight: 700;
     font-size: 1.25rem;
+    white-space: nowrap;
+    border: 2px solid #684f1e;
+    box-sizing: border-box;
 }
 @media screen and (min-width: 768px){
+    .gd-intro .btn{
+        font-size: 1.5rem;
+        right: 210px;
+        bottom: -40px;
+        z-index: 10;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gd-intro .btn{
+        padding: 15px 45px;
+        right: 60px;
+        bottom: -40px;
+        z-index: 10;
+    }
+}
+@media screen and (min-width: 1440px){
     .gd-intro .btn{
         padding: 20px 60px;
         right: 60px;
         bottom: -40px;
-        font-size: 1.5rem;
     }
 }
 .fa-angle-right{
     padding-left: 5px;
 }
+
 /* =====================s-f===================== */
 /* .theme_figure{
     max-height: 898px;
@@ -216,10 +347,29 @@ main{
 @media screen and (min-width: 768px){
     .fig-container{
         left: 0;
-        top: -200px;
-        /* top: -22.3%; */
+        /* top: -80px; */
     }
 }
+/* @media screen and (min-width: 1024px){
+    .fig-container{
+        top: -110px;
+    }
+}
+@media screen and (min-width: 1200px){
+        .fig-container{
+        top: -125px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .fig-container{
+        top: -150px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .fig-container{
+        top: -200px;
+    }
+} */
 .fig-makima{
     display: none;
 }
@@ -267,10 +417,38 @@ main{
 @media screen and (min-width: 768px){
     .fig-wrapper{
         display: block;
+        width: 500px;
+        right: 30px;
+        top: 40px;
+        z-index: 3;
+    }
+}
+@media screen and (min-width: 1024px){
+    .fig-wrapper{
+        width: 640px;
+        right: 30px;
+        top: 90px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .fig-wrapper{
+        width: 760px;
+        right: 10px;
+        top: 120px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .fig-wrapper{
+        width: 860px;
+        right: 70px;
+        top: 120px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .fig-wrapper{
         width: 1000px;
         right: 100px;
         top: 200px;
-        z-index: 3;
     }
 }
 .fig-wrapper h2 {
@@ -283,11 +461,36 @@ main{
 }
 @media screen and (min-width: 768px){
     .fig-wrapper h2 {
-        font-size: 3.875rem;
-        -webkit-text-stroke: 2px #deaa40;
+        font-size: 1.875rem;
+        -webkit-text-stroke: 1px #deaa40;
         text-align: right;
-        padding-bottom: 10px;
         margin-top: 0;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .fig-wrapper h2{
+        -webkit-text-stroke: 1px #deaa40;
+    }
+}
+@media screen and (min-width: 1200px){
+    .fig-wrapper h2 {
+        font-size: 2.5rem;
+        text-align: right;
+        margin-top: 0;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (min-width: 1440px){
+        .fig-wrapper h2 {
+        font-size: 3rem;
+        -webkit-text-stroke: 2px #deaa40;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1920px){
+        .fig-wrapper h2 {
+        font-size: 3.75rem;
     }
 }
 .fig-intro{
@@ -303,10 +506,32 @@ main{
 }
 @media screen and (min-width: 768px){
     .fig-intro{
-        width: 1000px;
+        width: 520px;
         background-color: #000;
-        padding: 40px 40px 40px 300px;
+        padding: 15px 15px 15px 220px;
         margin: 0;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 1024px){
+        .fig-intro{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px){
+        .fig-intro{
+        padding: 30px 20px 30px 250px;
+    }
+}
+@media screen and (min-width: 1440px){
+        .fig-intro{
+        padding: 30px 30px 40px 300px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 1920px){
+        .fig-intro{
+        padding: 40px 40px 40px 300px;
         font-weight: 900;
     }
 }
@@ -317,7 +542,18 @@ main{
 }
 @media screen and (min-width: 768px){
     .fig-intro-title{
+        font-size: 1.25rem;
+    }
+}
+/* @media screen and (min-width: 1200px){
+    .fig-intro-title{
+        font-size: 1.25rem;
+    }
+} */
+@media screen and (min-width: 1440px){
+        .fig-intro-title{
         padding-bottom: 20px;
+        font-size: 1.5rem;
     }
 }
 .fig-intro-text{
@@ -329,8 +565,23 @@ main{
 }
 @media screen and (min-width: 768px){
     .fig-intro-text{
-        font-size: 1.125rem;
         font-weight: 400;
+    }
+}
+@media screen and (min-width: 1200px){
+    .fig-intro-text{
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+}
+@media screen and (min-width: 1440px){
+        .fig-intro-text{
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+}
+@media screen and (min-width: 1920px){
+        .fig-intro-text{
         line-height: 1.75;
     }
 }
@@ -343,18 +594,66 @@ main{
     background-color: #deaa40;
     padding: 10px 30px;
     text-decoration: underline;
-    font-size: 1.25rem;
     font-weight: 700;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    border: 2px solid #684f1e;
+    box-sizing: border-box;
 }
 @media screen and (min-width: 768px){
     .fig-container .btn{
-        padding: 20px 60px;
-        right: 150px;
-        bottom: -30px;
-        z-index: 50;
+        font-size: 1.5rem;
+        right: 100px;
+        bottom: -40px;
+        z-index: 10;
     }
 }
-
+@media screen and (min-width: 1200px){
+        .fig-container .btn{
+        padding: 15px 45px;
+        right: 150px;
+        bottom: -40px;
+    }
+}
+@media screen and (min-width: 1440px){
+        .fig-container .btn{
+        padding: 20px 60px;
+    }
+}
+/* ===============.btn-effect-share===================== */
+.btn-highLight{
+    overflow: hidden;
+}
+.btn-highLight::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, white, transparent);
+    top:0;
+    left: -100%;
+    transition: 0.3s;
+}
+.btn-highLight:hover::before{
+    animation-name: high-light;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes high-light{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 100%;
+    }
+}
+.btn-highLight:active{
+    color: #fff;
+    border: 2px solid #deaa40;
+    background-color: #684f1e;
+    box-sizing: border-box;
+}
 /* ====================s-p-p===================== */
 .popular-peripherals{
     max-width: 1920px;

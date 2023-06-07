@@ -110,13 +110,13 @@
                             <p>號稱1/100高達模型系列最高展現的MGEX系列，繼之前獨角獸高達叫好叫座之後，第二彈終於公佈！官方宣佈第二彈為人氣長年旺盛的「MGEX突擊自由高達」，並宣稱在技術力上再創「GUNPLA史上的金屬表現最高峰」。
                             </p>
                         </div>
-                        <a class="btn" href="#">商品詳情<i class="fa-solid fa-angle-right"></i></a>
+                        <a class="btn btn-highLight" href="#">商品詳情<i class="fa-solid fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="theme theme_figure">
-            <div class="fig-container">
+            <div class="fig-container" id="fixedTop">
                 <div class="fig-bg">
                     <img src="pic/index_05-bg.png" class="makima-bg_lg" alt="">
                     <img src="pic/index_05-bg_mobile.png" class="makima-bg_md" alt="">
@@ -134,7 +134,7 @@
                             <p>日本IT集團CyberZ（株式会社CyberZ）旗下之子公司eStream所推出的高品質模型品牌「SHIBUYA SCRAMBLE
                                 FIGURE」，預定將要在2024年4月，推出人氣少年漫畫作品《鏈鋸人》中的人氣女主角「真紀真」（マキマ）的1/7比例之立體人形商品！</p>
                         </div>
-                        <a class="btn" href="#">商品詳情<i class="fa-solid fa-angle-right"></i></a>
+                        <a class="btn btn-highLight" href="#">商品詳情<i class="fa-solid fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -560,21 +560,21 @@
             items: 3,
             loop: true,
             margin: 10,
-            nav:true,
+            nav: true,
             autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: false,
             responsive: {
                 0: {
-                    items:1
+                    items: 1
                 },
-                600:{
-                    items:1
+                600: {
+                    items: 1
                 },
-                1000:{
-                    items:1
+                1000: {
+                    items: 1
                 }
-                }
+            }
         });
         $('.play').on('click', function () {
             owl.trigger('play.owl.autoplay', [1000])
@@ -582,6 +582,31 @@
         $('.stop').on('click', function () {
             owl.trigger('stop.owl.autoplay')
         })
+    </script>
+    <script>
+        // 獲取視窗的寬度
+        const getWindowWidth = () => window.innerWidth;
+        // 計算 top 的值
+        const calculateTopValue = () => {
+            const windowWidth = getWindowWidth();
+            if (windowWidth < 768) {
+                return 0;
+            } else if (windowWidth > 1920) {
+                return -200;
+            } else {
+                return windowWidth * -0.104166;
+            }
+        };
+        // 更新絕對定位物件的 top 值
+        const updateTopValue = () => {
+            const element = document.getElementById('fixedTop');
+            const topValue = calculateTopValue();
+            element.style.top = topValue + 'px';
+        };
+        // 監聽視窗大小改變事件
+        window.addEventListener('resize', updateTopValue);
+        // 初始設定
+        updateTopValue();
     </script>
 </body>
 
