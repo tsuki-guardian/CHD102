@@ -51,15 +51,16 @@ a{
 .hb{
     width: 40px;
     height: 40px;
-    border-radius: 3px;
-    background-color: #deaa40;
+    /* border-radius: 3px; */
+    /* background-color: #deaa40; */
     position: relative;
     cursor: pointer;
 }
 .hb span{
     width: 84%;
     height: 4px;
-    background-color: #3f3f3f;
+    /* background-color: #3f3f3f; */
+    background-color: #deaa40;
     position: absolute;
     margin: auto;
     left: 0;
@@ -79,16 +80,16 @@ a{
     top: 28px;
     transition: transform .1s .3s ,top .3s .7s;
 }
-#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(1){
+#menu-switch:checked ~ .header-wrap > .header-main > .hb > span:nth-child(1){
     top: 18px;
     transform: rotate(135deg);
     transition: top .2s .1s,transform .2s .6s;
 }
-#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(2){
+#menu-switch:checked ~ .header-wrap > .header-main > .hb > span:nth-child(2){
     background: none;
     transition: background 0;
 }
-#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(3){
+#menu-switch:checked ~ .header-wrap > .header-main > .hb > span:nth-child(3){
     top: 18px;
     transform: rotate(225deg);
     transition: top .2s .1s,transform .2s .6s;
