@@ -44,26 +44,54 @@ a{
 #menu-switch{
     display: none;
 }
-#menu-switch:checked + .header-wrap > .header-main > .navList{
-    top: -80px;
-    transition: .5s;
-}
-#menu-switch:checked + .header-wrap > .header-main > .navList > .navList-content{
-    display: flex;
+#menu-switch:checked ~ .header-wrap > .header-main > .navList{
+    bottom: 80px;
+    transition: bottom .5s;
 }
 .hb{
     width: 40px;
     height: 40px;
-    background-color: #bfbfbf;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    border-radius: 3px;
+    background-color: #deaa40;
+    position: relative;
+    cursor: pointer;
 }
 .hb span{
     width: 84%;
-    height: 3px;
+    height: 4px;
     background-color: #3f3f3f;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    rotate: 0deg;
+}
+
+.hb span:nth-child(1){
+    top: 8px;
+    transition: transform .1s .3s ,top .3s .7s;
+}
+.hb span:nth-child(2){
+    top: 18px;
+    transition: background .3s .6s;
+}
+.hb span:nth-child(3){
+    top: 28px;
+    transition: transform .1s .3s ,top .3s .7s;
+}
+#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(1){
+    top: 18px;
+    transform: rotate(135deg);
+    transition: top .2s .1s,transform .2s .6s;
+}
+#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(2){
+    background: none;
+    transition: background 0;
+}
+#menu-switch:checked + .header-wrap > .header-main > .hb > span:nth-child(3){
+    top: 18px;
+    transform: rotate(225deg);
+    transition: top .2s .1s,transform .2s .6s;
 }
 .logo{
     display: none;
@@ -74,10 +102,11 @@ a{
     margin: auto;
     /* 768 */
     display: flex;
-    top: 0;
+    bottom: -420px;
     position: absolute;
     background-color: #333;
     z-index: -1;
+    transition: Bottom .5s;
 }
 .navList-content {
     width: 100%;
@@ -85,9 +114,11 @@ a{
     white-space: nowrap;
     align-items: center;
     /* 768 */
-    display: none;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    height: 80px;
+    height: 400px;
+    margin-bottom: 20px;
 }
 .navList-content li{
     position: relative;
@@ -103,19 +134,22 @@ a{
     background-color: #DEAA40;
     transition: width 0.3s ease-out, left 0.3s ease-out;
 }
+.navList-content li:nth-child(1)::after{
+    background-color: #de4040;
+}
 .navList-content li:nth-child(2)::after{
     background-color: #00E0FF;
 }
-.navList-content li:nth-child(2)::after{
+.navList-content li:nth-child(3)::after{
     background-color: #6AA6FF;
 }
-.navList-content li:nth-child(3)::after{
+.navList-content li:nth-child(4)::after{
     background-color: #00FFD1;
 }
-.navList-content li:nth-child(4)::after{
+.navList-content li:nth-child(5)::after{
     background-color: #DEAA40;
 }
-.navList-content li:nth-child(5)::after{
+.navList-content li:nth-child(6)::after{
     background-color: #F077C0;
 }
 .navList-content li:hover::after{
@@ -135,18 +169,41 @@ a{
     height: 100%;
 }
 .search{
-    display: flex;
-    align-items: center;
-    font-size: 0;
-    position: relative;
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
 }
 .search-bar{
-    display: none;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
 }
 .search-btn{
-    display: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 100%;
+
+    color: #fff;
+    border-top: 1px solid #727272;
+    border-left: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+    background-color: #444444;
 }
 /* 手機版搜尋按鈕 */
+#search-switch{
+    display: none;
+}
+#search-switch:checked ~ .header-wrap > .header-main > .search{
+    display: block;
+}
+.mobile-search {
+    display: block;
+    cursor: pointer;
+}
 .mobile-search i {
     font-size: 32px;
     color: #fff;
@@ -242,13 +299,22 @@ a{
 .navList-content {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+.navList-content li:nth-child(1){
+    display: none;
 }
     .search{
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 0;
         width: 32.5%;
         margin: 0 10px;
+        bottom: unset;
     }
     .search-bar{
-        width: 100%;
         height: 32px;
         font-size: 16px;
         border:none;
@@ -261,6 +327,7 @@ a{
         display: block;
     }
     .search-btn{
+        display: block;
         width: 36px;
         height: 32px;
         background-color: #444444;
@@ -364,7 +431,7 @@ a{
 #myBtn {
     display: none; 
     position: fixed;
-    bottom: 180px; 
+    bottom: 100px; 
     right: 20px; 
     z-index: 99; 
     border: 1px solid #deaa40;
