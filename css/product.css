@@ -29,18 +29,46 @@ main{
     max-width: 1440px;
     margin: auto;
 }
+/* ==========商品分類========== */
 .product-list{
     padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 414px){
+    .product-list{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 768px){
+    .product-list{
+        gap:15px;
+        justify-content: start;
+    }
 }
 .product-list li a{
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
 }
-.product-list li span{
-    padding-left: 10px;
+@media screen and (min-width: 768px){
+    .product-list li a{
+        display: block;
+    }
+}
+.product-list li a span{
+    margin-left: 0;
+}
+@media screen and (min-width: 768px){
+    .product-list li a span{
+        margin-left: 5px;
+    }
 }
 .product-list img{
     vertical-align: middle;
