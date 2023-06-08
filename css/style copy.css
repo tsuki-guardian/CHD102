@@ -1,0 +1,424 @@
+body{
+    font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
+    width: 100%;
+    font-size: 16px;
+    background-image: url("../pic/goldLight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+a{
+    text-decoration: none;
+}
+/* =====================slider===================== */
+.owl-carousel{
+    position: relative;
+}
+.owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+.owl-nav{
+    width: 100%;
+    font-size: 60px;
+    color: #deaa40;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -60px !important;
+}
+.owl-prev{
+    position: relative;
+    left: 5%;
+}
+.owl-next{
+    position: relative;
+    right: 5%;
+}
+/* =====================s-g===================== */
+main{
+    margin-top: 80px;
+    width: 100%;
+}
+.theme{
+    width: 100%;
+    text-align: center;
+}
+.gd-container{
+    position: relative;
+    max-width: 1920px;
+    margin: auto;
+}
+.gd-container img {
+    width: 100%;
+}
+.gd-wrapper{
+    padding-top: 30px;
+    width: 600px;
+    position: absolute;
+    text-align: left;
+    left: 240px;
+    top: 0;
+    font-weight: 900;
+}
+.gd-title-sub{
+    text-align: left;
+    font-size: 60px;
+    color: #000000 ;
+    -webkit-text-stroke: 2px #deaa40;
+}
+.gd-title-main{
+    position: relative;
+    text-align: right;
+    font-size: 100px;
+    color: #deaa40;
+    right: 0;
+    z-index: 1;
+}
+.gd-intro{
+    position: relative;
+    box-sizing: border-box;
+    width: 450px;
+    border: 1px solid #deaa40;
+    background-color: #000;
+    padding: 60px 30px 30px;
+    line-height: 1.75;
+    top: -30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.gd-intro .gd-intro-title{
+    font-size: 32px;
+    color: #deaa40;
+    padding-bottom: 10px;
+}
+.gd-intro .gd-intro-text{
+    text-align: justify;
+    color: #fff;
+}
+.gd-intro .btn{
+    position: absolute;
+    display: block;
+    color: #000;
+    right: -60px;
+    bottom: -40px;
+    background-color: #deaa40;
+    padding: 20px 60px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.fa-angle-right{
+    padding-left: 5px;
+}
+/* =====================s-f===================== */
+.theme_figure{
+    max-height: 898px;
+    height: 898px;
+}
+.fig-container{
+    /* background-color: #000; */
+    /* background-image: linear-gradient(to bottom #000 70%,transparent 100%); */
+    position: relative;
+    max-width: 1920px;
+    max-height: 898px;
+    margin: auto;
+    left: 0;
+    /* top: -200px; */
+    top: -22.3%;
+}
+.fig-makima{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.makima-bg{
+    width: 100%;
+}
+.fig-makima img{
+    pointer-events: none;
+    max-width: 100%;
+    height: 100%;
+}
+.fig-wrapper{
+    width: 1000px;
+    position: absolute;
+    text-align: right;
+    right: 100px;
+    top: 200px;
+    font-weight: 900;
+    z-index: 3;
+}
+.fig-wrapper h2 {
+    text-align: right;
+    font-size: 62px;
+    color: #000000 ;
+    padding-bottom: 10px;
+    -webkit-text-stroke: 2px #deaa40;
+}
+.fig-intro{
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    width: 1000px;
+    border: 1px solid #deaa40;
+    background-color: #000;
+    padding: 40px 40px 40px 300px;
+}
+.fig-intro-title{
+    color: #deaa40;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.fig-intro-text{
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.fig-container .btn{
+    position: absolute;
+    display: block;
+    color: #000;
+    /* right: 140px; */
+    /* bottom: 340px; */
+    right: 30px;
+    bottom: -30px;
+    background-color: #deaa40;
+    padding: 20px 60px;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 50;
+}
+/* ====================s-p-p===================== */
+.popular-peripherals{
+    max-width: 1920px;
+    margin: auto;
+    padding-bottom: 30px;
+    position: relative;
+}
+.pp-container{
+    max-width: 1440px;
+    margin: auto;
+}
+.pp-title-main{
+    display: inline-block;
+    font-size: 0;
+    font-weight: 900;
+}
+.pp-title-main-l{
+    display: inline-block;
+    color: #000;
+    -webkit-text-stroke: 2px #deaa40;
+    font-size: 80px;
+}
+.pp-title-main-r{
+    display: inline-block;
+    color: #fff;
+    border-bottom:5px solid #deaa40;
+    font-size: 80px;
+    padding-bottom: 5px;
+}
+.pp-title-sub{
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+    padding: 5px 0 50px;
+}
+/* =====================卡片===================== */
+.pp-card-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* gap: 45px; */
+}
+.card{
+    box-sizing: border-box;
+    /* width: 330px; */
+    width: 21.916666%;
+    height: 560px;
+    background-color: #000;
+    padding: 10px;
+    box-shadow: 5px 5px 0px 0px #deaa40;
+    margin: 0 1.5625%;
+}
+.card-pic{
+    position: relative;
+    font-size: 0;
+}
+.card-pic img{
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+.card-pic::before,
+.card-pic::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    pointer-events: none;
+    /* 禁用偽元素的滑鼠事件 */
+}
+.card-pic::before {
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 1;
+}
+.card-pic::after {
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 1;
+}
+.decorateLB{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.decorateRT{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #000;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.card-intro{
+    line-height: 1.25;
+    margin-top: 15px;
+    /* padding: 15px; */
+    color: #fff;
+}
+.card:nth-child(1) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #272A70,
+              2px -2px 0 #272A70,
+              -2px 2px 0 #272A70,
+              2px 2px 0 #272A70;
+}
+.card:nth-child(2) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #0473D3,
+    2px -2px 0 #0473D3,
+    -2px 2px 0 #0473D3,
+    2px 2px 0 #0473D3;
+}
+.card:nth-child(3) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #DA56A7,
+    2px -2px 0 #DA56A7,
+    -2px 2px 0 #DA56A7,
+    2px 2px 0 #DA56A7;
+}
+.card:nth-child(4) .card-intro .card-title{
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: -2px -2px 0 #96285D,
+    2px -2px 0 #96285D,
+    -2px 2px 0 #96285D,
+    2px 2px 0 #96285D;
+}
+
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.pp-bg{
+    position: absolute;
+    bottom: -300px;
+    z-index: -1;
+}
+.pp-bg img{
+    width: 100%;
+}
+/* ====================s-i-d-p===================== */
+.imminent-deadline-product{
+    max-width: 1920px;
+    margin: auto;
+    background-image: url("../pic/bg_gradient_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.idp-container{
+    max-width: 1440px;
+    margin: auto;
+    padding-bottom: 200px;
+}
+.idp-title{
+    font-size: 30px;
+    text-align: left;
+    color: #deaa40;
+    font-weight: 700;
+    padding: 100px 0 30px;
+}
+/* .smallCard-wrap{
+} */
+.smallCard{
+    box-sizing: border-box;
+    /* width: 190px; */
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    border: 1px solid #deaa40;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.smallCard:hover{
+    transform: scale(1.02);
+    transition: .2s;
+}
+.smallCard-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+    border-left: 3px solid #deaa40;
+    padding-left: 5px;
+    }
+.smallCard-title-main{
+    color: #deaa40;
+}
+.smallCard-title-type{
+    padding-top: 5px;
+    color: #fff;
+}
+.smallCard-detail-btn{
+    /* width: 170px; */
+    width: 100%;
+    /* height: 35px; */
+    font-weight: 400;
+    line-height: 2;
+    background-color: #deaa40;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-top: auto;
+}

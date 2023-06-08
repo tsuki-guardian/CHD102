@@ -63,6 +63,7 @@ main{
     margin-bottom: 30px;
     color: #333;
     padding-top: 20px;
+    user-select: none;
 }
 .custom-select {
     width: 12%;
@@ -119,12 +120,12 @@ main{
     margin-right: 10px;
 }
 .filter-cancel{
-    width: 8.333333%;
+    width: 5%;
     display: inline-block;
-    background-color: #de404080;
-    border: 1px solid #de4040;
-    color: #fff;
-    padding: 10px;
+    /* background-color: #de404080;
+    border: 1px solid #de4040; */
+    color: #ccc;
+    /* padding: 10px; */
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
@@ -133,9 +134,9 @@ main{
 .filter-btn:active{
     background-color: #DEAA40;
 }
-.filter-cancel:active{
+/* .filter-cancel:active{
     background-color: #de4040;
-}
+} */
   /* =========分類選項=================== */
 .category{
     font-size: 0;
@@ -199,6 +200,7 @@ main{
     color: #fff;
     font-weight: 700;
     padding: 10px;
+    line-height: 1.25;
   }
   .card .price{
     text-align: end;
