@@ -8,7 +8,18 @@ body{
     background-attachment: fixed;
 }
 main{
-    margin-top: 80px;
+    margin-top: 0;
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    main{
+        margin-top: 150px;
+    }
+}
+@media screen and (min-width: 1200px){
+    main{
+        margin-top: 80px;
+    }
 }
 .product{
     max-width: 1920px;
@@ -18,19 +29,46 @@ main{
     max-width: 1440px;
     margin: auto;
 }
+/* ==========商品分類========== */
 .product-list{
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 414px){
+    .product-list{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 768px){
+    .product-list{
+        gap:15px;
+        justify-content: start;
+    }
 }
 .product-list li a{
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
 }
-.product-list li span{
-    padding-left: 10px;
+@media screen and (min-width: 768px){
+    .product-list li a{
+        display: block;
+    }
+}
+.product-list li a span{
+    margin-left: 0;
+}
+@media screen and (min-width: 768px){
+    .product-list li a span{
+        margin-left: 5px;
+    }
 }
 .product-list img{
     vertical-align: middle;
@@ -58,18 +96,18 @@ main{
 }
 /* =========篩選器=================== */
 .filter {
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 30px;
     color: #333;
     padding-top: 20px;
     user-select: none;
 }
 .custom-select {
-    width: 12%;
+    width: 230px;
     position: relative;
     display: inline-block;
-    margin-right: 10px;
 }
 .select-trigger {
     position: relative;
@@ -108,7 +146,7 @@ main{
 }
   /* =========篩選器按鈕=================== */
 .filter-btn{
-    width: 8.333333%;
+    width: 120px;
     display: inline-block;
     background-color: #DEAA4080;
     border: 1px solid #DEAA40;
@@ -117,10 +155,9 @@ main{
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
-    margin-right: 10px;
 }
 .filter-cancel{
-    width: 5%;
+    width: 70px;
     display: inline-block;
     /* background-color: #de404080;
     border: 1px solid #de4040; */
@@ -129,7 +166,9 @@ main{
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
-    margin-right: 10px;
+}
+.filter-cancel:active{
+    color: #888;
 }
 .filter-btn:active{
     background-color: #DEAA40;

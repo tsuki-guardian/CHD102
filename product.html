@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/col.css">
     <!-- use google fonts "Inter & Noto Sans" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,10 @@
 <body>
     <header class="todomain-header">
         <div class="mobile-logo">
-            <img src="pic/todomain_logo_gold.svg" alt="logo">
+            <a href="index.html"><img src="pic/todomain_logo_gold.svg" alt="logo"></a>
         </div>
         <input type="checkbox" id="menu-switch">
+        <input type="checkbox" id="search-switch">
         <div class="header-wrap">
             <div class="logo">
                 <a href="index.html">
@@ -36,6 +38,9 @@
                 </label>
                 <nav class="navList">
                     <ul class="navList-content">
+                        <li>
+                            <a href="index.html"><span>Home</span><br>首頁</a>
+                        </li>
                         <li>
                             <a href="about-us.html"><span>About</span><br>關於我們</a>
                         </li>
@@ -56,11 +61,11 @@
                 <div class="search">
                     <input class="search-bar" type="search" id="search" placeholder="搜尋商品">
                     <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <label class="mobile-search" for="search-switch">
-                        <i class="fa-solid fa-magnifying-glass"></i><br>
-                        <span>搜尋商品</span>
-                    </label>
                 </div>
+                <label class="mobile-search" for="search-switch">
+                    <i class="fa-solid fa-magnifying-glass"></i><br>
+                    <span>搜尋商品</span>
+                </label>
                 <div class="login">
                     <i class="fa-solid fa-user"></i>
                     <i class="fa-solid fa-circle-user"></i>
@@ -96,33 +101,36 @@
                 <div class="product-large-pic">
                     <img src="pic/product-card/fate.png" alt="">
                 </div>
-                <div class="product-small-pic">
-                    <div><a href="#"><img src="pic/product-card/hl.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/jk.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/ds.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/tr.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/mhr.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/kc.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/fgo.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/ss.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/mo.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/bb.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/od.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/ks.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/mc.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/hm.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/tf.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/um.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/gbf.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/hk.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/pc.png" alt=""></a></div>
-                    <div><a href="#"><img src="pic/product-card/im.png" alt=""></a></div>
+                <div class="product-small-pic row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/hl.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/jk.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/ds.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/tr.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/mhr.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/kc.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/fgo.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/ss.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/mo.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/bb.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/od.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/ks.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/mc.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/hm.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/tf.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/um.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/gbf.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/hk.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/pc.png" alt=""></a></div></div>
+                    <div class="col"><div class="sp"><a href="#"><img src="pic/product-card/im.png" alt=""></a></div></div>
                 </div>
                 <div class="product-bot">
                     <a href="#" class="get-more-btn">更多主題作品</a>
                 </div>
             </div>
         </section>
+        <div class="go-top-btn">
+            <button onclick="topFunction()" id="myBtn" title="回到首頁"><i class="fa-solid fa-angles-up"></i></button>
+        </div>
     </main>
     <footer class="todomain-footer">
         <div class="footer-line">
@@ -136,5 +144,26 @@
             <p>＊Note:No reproduction of contents and images is allowed.</p>
         </div>
     </footer>
+    <script class="goTop">
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // 向下滾動20px時顯示按鈕
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // 點擊時回到最頂部
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 </html>
