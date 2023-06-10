@@ -51,11 +51,7 @@ main{
     color: #777;
 }
 /* ==============商品內容============== */
-.product-info-container{
-    font-size: 0;
-}
 .title-product-recommended{
-    font-size: 0;
     margin-bottom: 20px;
 }
 .gold-line{
@@ -67,31 +63,31 @@ main{
 }
 .title-product-intro-text{
     color:#deaa40;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     background-image: linear-gradient(to bottom, #440505, transparent);
     padding: 15px 20px;
 }
 .product-top-info{
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 .product-name-wrap{
-    /* padding: 30px 20px 0 20px; */
+    margin-right: 30px;
 }
 /* .product-name{
     display: flex;
 } */
 .product-name-main{
-    font-size: 32px;
+    font-size: 2rem;
     color:#deaa40;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .product-name-sub{
-    font-size: 18px;
+    font-size: 1.125em;
     color: #8E9096;
 }
 .product-tag-date{
@@ -135,7 +131,7 @@ main{
     position: relative;
 }
 .product-large-pic i{
-    font-size: 50px;
+    font-size: 3.125rem;
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -168,41 +164,56 @@ main{
     height: 100%;
     object-fit: cover;
 }
+/* 商品數量及價格區塊 */
 .product-price-info{
-    font-size: 24px;
-    /* padding: 40px 10px; */
+    font-size: 16px;
     margin-top: auto;
-    /* height: calc(30% - 20px); */
+}
+@media screen and (min-width: 1024px){
+    .product-price-info{
+        font-size: 24px;
+    }
 }
 /* 數量選擇 */
 .select {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px){
+    .select {
+        margin-bottom: 30px;
+    }
 }
 .select select{
     height: 100%;
     text-align: center;
     background-color: transparent;
     color: #fff;
-    font-size: 24px;
+    font-size: 1em;
     border: 1px solid #77777780;
-    width: 200px;
+    width: 210px;
     margin-left: 20px;
-    padding: 5px 0;
+    padding: 5px 0px;
 }
-.select select option{
+.select .quantity_select option{
+    text-align: center;
     color: #000;
 }
 /* 價格 */
 .price{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px){
+    .price{
+        margin-bottom: 30px;
+    }
 }
 .price .price-twd{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.5em;
     color: #DEAA40;
     margin-left: 20px;
 }
@@ -238,29 +249,37 @@ main{
 }
 /* ==============商品詳情標題============== */
 .product-detail{
-    font-size: 16px;
-    padding: 30px 20px;
+    font-size: 14px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (min-width: 1024px){
+    .product-detail{
+        font-size: 16px;
+    }
 }
 /* ==============商品詳情-左欄============== */
 .product-detail-info{
     width: 45%;
 }
 .product-intro-text{
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 1.5;
     color: #DEAA40;
     margin-bottom: 50px;
+    text-align: justify;
 }
-.product-specifications{
-    font-size: 16px;
-}
+/* .product-specifications{
+} */
 .product-specifications p {
-    margin-bottom: 30px;
+    font-size: 1.25em;
+    line-height: 1.5;
+    /* margin-bottom: 30px; */
 }
 .notice-of-manufacturing{
     list-style: disc;
+    margin-top: 50px;
 }
 .notice-of-manufacturing li{
     padding-bottom: 10px;
@@ -269,7 +288,8 @@ main{
 /* ==============商品詳情-右欄============== */
 .shopping-instructions{
     width: 45%;
-    font-size: 20px;
+    font-size: 1.25em;
+    line-height: 1.5;
 }
 .shopping-instructions ul{
     list-style: disc;
@@ -281,18 +301,17 @@ main{
     /* 字首貼齊有border-left的標題 */
     /* list-style-position: inside; */
     /* 讓li的點貼齊內文 */
-    /* vertical-align: middle; */
 }
 .shopping-instructions li{
     margin-left: 40px;
-    margin-bottom: 10px;  
+    /* margin-bottom: 10px;   */
     /* padding-bottom: 10px; */
 }
 .shopping-instructions h3{
     border-left:4px solid #DEAA40;
     font-weight: 700;
     padding-left: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .shopping-instructions h4{
     margin-bottom: 10px;
@@ -304,9 +323,9 @@ main{
     margin-bottom: 50px;    
 }
 /* ==============copyright============== */
-.product-copyright{
+/* .product-copyright{
     font-size: 16px;
-}
+} */
 /* ==============推薦商品============== */
 /* .smallCard-wrap{
     display: grid;
@@ -349,12 +368,12 @@ main{
     color: #fff;
 }
 .smallCard-detail-btn{
-    /* width: 170px; */
     width: 100%;
-    /* height: 35px; */
     font-weight: 400;
     line-height: 2;
     background-color: #deaa40;
+    color: #000;
+    text-align: center;
     margin-top: 10px;
     cursor: pointer;
     margin-top: auto;
