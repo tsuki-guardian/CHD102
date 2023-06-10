@@ -287,6 +287,7 @@ a{
 .logo{
     display: block;
     padding: 10px 0;
+    box-sizing: border-box;
 }
 .logo a{
     display: block;
@@ -421,6 +422,10 @@ a{
 }
 .footer-logo{
     padding-top: 80px;
+}
+.footer-logo img{
+    width: 100%;
+    max-width: 350px;
 }
 .copy-right{
     padding-top: 60px;
