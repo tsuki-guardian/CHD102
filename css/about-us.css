@@ -2,15 +2,19 @@ body{
     font-family: Inter,Noto Sans TC,Microsoft JhengHei,sans-serif,serif;
     font-size: 16px;
     background-color: #000;
-    background-image: url("../pic/Mahiru-bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+.body-item1{
+    background-image: url("../pic/Mahiru-bg-mobile.png");
+}
+.body-item2{
+    background-image: url("../pic/Nanami-bg-mobile.png");
+}
 @media screen and (min-width: 768px){
     body{
         background-image: url("../pic/bgBlue.jpg");
-        /* background-image: none; */
     }
 }
 main{
@@ -18,12 +22,19 @@ main{
 }
 @media screen and (min-width: 768px){
     main{
-        background-image: url("../pic/Mahiru-bg_full.png"), url("../pic/bgBlue.jpg");
         background-repeat: no-repeat;
         background-size: auto 100%;
         background-attachment: fixed;
         margin-top: 150px;
         background-position-y:150px;
+    }
+}
+@media screen and (min-width: 768px){
+    .main-item1{
+        background-image: url("../pic/Mahiru-bg_full.png"), url("../pic/bgBlue.jpg");
+    }
+    .main-item2{
+        background-image: url("../pic/Nanami-bg_full.png"), url("../pic/bgBlue.jpg");
     }
 }
 @media screen and (min-width: 1024px){
@@ -33,9 +44,16 @@ main{
 }
 @media screen and (min-width: 1200px){
     main{
-        background-image: url("../pic/Mahiru-bg.png"), url("../pic/bgBlue.jpg");
         margin-top: 80px;
         background-position-y:80px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .main-item1{
+        background-image: url("../pic/Mahiru-bg.png"), url("../pic/bgBlue.jpg");
+    }
+    .main-item2{
+        background-image: url("../pic/Nanami-bg.png"), url("../pic/bgBlue.jpg");
     }
 }
 @media screen and (min-width: 1700px){
@@ -63,12 +81,18 @@ main{
 }
 /* 右文字區塊 */
 .Brand-Story-text{
+    display: block;
+}
+.Store-Introduction-text{
+    display: none;
+}
+.subject-text{
     width: 70%;
     text-align: center;
     margin: 30px 20px;
 }
 @media screen and (min-width: 768px){
-    .Brand-Story-text{
+    .subject-text{
         margin: 100px auto;
     }
 }
@@ -108,7 +132,7 @@ main{
     align-items: center;
     justify-items: center;
     margin: 100px 20px;
-    max-height: 500px;
+    height: 400px;
 }
 @media screen and (min-width: 768px){
     .side-item{
@@ -117,6 +141,7 @@ main{
         grid-template: repeat(9,1fr)/repeat(2,1fr);
         justify-items: center;
         gap: 20px 0;
+        height: auto;
         max-height: 570px;
     }
 }
@@ -146,9 +171,11 @@ main{
 .btn_shape svg{
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 .btn_shape1{
     grid-area: 1/1/2/2;
+    transform: scale(1.2);
 }
 .btn_shape2{
     grid-area: 3/1/4/2;
@@ -178,6 +205,7 @@ main{
     text-align: center;
     white-space: nowrap;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 @media screen and (min-width: 768px){
     .s-text{
@@ -187,6 +215,7 @@ main{
 .btn-Story{
     grid-area: 2/1/3/1;
     color: #deaa40;
+    transform: scale(1.2);
 }
 .btn-Introduction{
     grid-area: 4/1/5/1;
