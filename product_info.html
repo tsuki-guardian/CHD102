@@ -121,16 +121,25 @@
                         </div>
                         <div class="product-middle-info">
                             <div class="product-large-pic">
-                                <a href="#"><img src="pic/product-info/MihonoBourbon1.png" alt="美浦波旁 ～栗髮改造人～"></a>
-                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <div><img src="pic/product-info/MihonoBourbon1.png" alt="美浦波旁 ～栗髮改造人～"></div>
+                                <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
                             </div>
                             <div class="product-pic_price-wrap">
-                                <div class="product-pic-wrap">
-                                    <a href="#"><img src="pic/product-info/MihonoBourbon2.webp" alt="美浦波旁 ～栗髮改造人～"></a>
-                                    <a href="#"><img src="pic/product-info/MihonoBourbon3.webp" alt="美浦波旁 ～栗髮改造人～"></a>
-                                    <a href="#"><img src="pic/product-info/MihonoBourbon4.webp" alt="美浦波旁 ～栗髮改造人～"></a>
-                                    <a href="#"><img src="pic/product-info/MihonoBourbon5.webp" alt="美浦波旁 ～栗髮改造人～"></a>
+                                <div class="product-pic-wrap light-box">
+                                    <div style="display:none;"><img src="pic/product-info/MihonoBourbon1.webp" alt="美浦波旁 ～栗髮改造人～"></div>
+                                    <div><img src="pic/product-info/MihonoBourbon2.webp" alt="美浦波旁 ～栗髮改造人～"></div>
+                                    <div><img src="pic/product-info/MihonoBourbon3.webp" alt="美浦波旁 ～栗髮改造人～"></div>
+                                    <div><img src="pic/product-info/MihonoBourbon4.webp" alt="美浦波旁 ～栗髮改造人～"></div>
+                                    <div><img src="pic/product-info/MihonoBourbon5.webp" alt="美浦波旁 ～栗髮改造人～"></div>
                                 </div>
+                                <div class="lightbox-container">
+                                    <div class="lightbox-content">
+                                      <img src="">
+                                      <div class="lightbox-prev"><i class="fa-solid fa-angle-left"></i></div>
+                                      <div class="lightbox-next"><i class="fa-solid fa-angle-right"></i></div>
+                                      <div class="lightbox-close"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                  </div>
                                 <div class="product-price-info">
                                     <div class="select">
                                         <p>數量</p>
@@ -361,6 +370,8 @@
             <p>＊Note:No reproduction of contents and images is allowed.</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- goTop -->
     <script class="goTop">
         // Get the button:
         let mybutton = document.getElementById("myBtn");
@@ -382,5 +393,68 @@
           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+      <!-- 燈箱 -->
+      <script>
+        $(document).ready(function() {
+          var $lightboxContainer = $('.lightbox-container');
+          var $lightboxContent = $('.lightbox-content');
+          var $lightboxImage = $('.lightbox-content img');
+          var $lightboxPrev = $('.lightbox-prev');
+          var $lightboxNext = $('.lightbox-next');
+          var $lightBox = $('.light-box');
+          var currentIndex = 0;
+          var $lightboxClose = $('.lightbox-close');
+    
+          // 點擊圖片時顯示燈箱
+          $('.product-large-pic img').click(function() {
+            currentIndex = 0;
+            showLightbox(currentIndex);
+          });
+    
+          //.light-box圖片被點擊時顯示燈箱
+          $lightBox.on('click', 'img', function() {
+            currentIndex = $(this).parent().index();
+            showLightbox(currentIndex);
+          });
+    
+          // 點擊圖片以外的區域關閉燈箱
+          $lightboxContainer.click(function(e) {
+            if ($(e.target).hasClass('lightbox-container')) {
+              hideLightbox();
+            }
+          });
+    
+          // 顯示前一張圖片
+          $lightboxPrev.click(function() {
+            currentIndex = (currentIndex - 1 + $lightBox.children().length) % $lightBox.children().length;
+            showLightbox(currentIndex);
+          });
+    
+          // 顯示下一張圖片
+          $lightboxNext.click(function() {
+            currentIndex = (currentIndex + 1) % $lightBox.children().length;
+            showLightbox(currentIndex);
+          });
+    
+          // 以指定的圖片顯示燈箱
+          function showLightbox(index) {
+            var $currentImage = $lightBox.children().eq(index).find('img');
+            var imageUrl = $currentImage.attr('src');
+    
+            $lightboxImage.attr('src', imageUrl);
+            $lightboxContainer.addClass('show');
+          }
+
+          // 點擊關閉按鈕關閉燈箱
+          $lightboxClose.click(function() {
+            hideLightbox();
+          });
+
+          // 隱藏燈箱
+          function hideLightbox() {
+            $lightboxContainer.removeClass('show');
+          }
+        });
+      </script>
 </body>
 </html>

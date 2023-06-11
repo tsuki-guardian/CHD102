@@ -329,6 +329,7 @@ main{
     padding: 30px 70px;
     border: 1px solid #deaa40;
     box-sizing: border-box;
+    user-select: none;
 }
 .now-customization-btn p{
     display: inline;

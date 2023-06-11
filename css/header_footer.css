@@ -185,18 +185,19 @@ a{
     font-size: 24px;
 }
 .search-btn{
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
     width: 40px;
     height: 100%;
-
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
     color: #fff;
-    border-top: 1px solid #727272;
-    border-left: 1px solid #727272;
-    border-bottom: 1px solid #727272;
+    border: unset;
     background-color: #444444;
+    cursor: pointer;
+}
+.search-btn i{
+    font-size: 18px;
 }
 /* 手機版搜尋按鈕 */
 #search-switch{
@@ -326,28 +327,20 @@ a{
         font-size: 16px;
         border:none;
         color: #fff;
-        border-top: 1px solid #727272;
-        border-left: 1px solid #727272;
-        border-bottom: 1px solid #727272;
+        border: 1px solid #727272;
         background-color: #444444;
         padding-right: 36px;
         display: block;
     }
     .search-btn{
-        display: block;
         width: 36px;
-        height: 32px;
-        background-color: #444444;
+        height: 28px;
+        top: 2px;
+        right: 2px;
         color: #deaa40;
-        border: none;
-        border-top: 1px solid #727272;
-        border-right: 1px solid #727272;
-        border-bottom: 1px solid #727272;
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
-        display: block;
+    }
+    .search-btn i{
+        font-size: unset;
     }
     .mobile-search{
         display: none;
@@ -358,13 +351,13 @@ a{
     }
     .login .fa-user{
         display: block;
-        margin-right: 5px;
+        font-size: 24px;
     }
     .login .fa-circle-user{
         display: none;
     }
     .login span{
-        padding-top: 0;
+        display: none;
     }
     .shopping-cart{
         display: flex;
@@ -373,7 +366,19 @@ a{
     }
     .shopping-cart i {
         display: flex;
-        font-size: 16px;
+        font-size: 24px;
+    }
+    .cart-quantity{
+    }
+    .cart-word{
+        display: none;
+    }
+}
+/* ====================min1024===================== */
+@media screen and (min-width:1024px){
+    .login span{
+        display: inline;
+        padding-top: 0;
     }
     .cart-quantity{
         font-size: 12px;
@@ -381,14 +386,20 @@ a{
         margin-left: 5px;
         position: static;
     }
+    .login .fa-user{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .shopping-cart i {
+        font-size: 16px;
+    }
     .cart-word{
+        display: block;
         margin-left: 5px;
         padding-top: 0;
     }
 }
-/* ====================min1024===================== */
-@media screen and (min-width:1024px){
-}
+
 /* ====================min1200===================== */
 @media screen and (min-width:1200px){
     .header-wrap{
