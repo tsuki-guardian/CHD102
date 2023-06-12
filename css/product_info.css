@@ -290,6 +290,7 @@ main{
     align-items: center;
     text-align: center;
     white-space: nowrap;
+    gap: 10px;
 }
 .add-to-cart{
     box-sizing: border-box;
@@ -306,11 +307,31 @@ main{
     color: #000;
     font-weight: 700;
 }
-.add-to-favorite i{
+@media screen and (min-width: 768px){
+    .add-to-cart{
+        width: 100%;
+    }
+    .checkout{
+        width: 100%;
+    }
+}
+.add-to-favorite {
     cursor: pointer;
+    position: relative;
+}
+.add-to-favorite i{
+    font-size: 32px;
 }
 .add-to-favorite p{
     padding-top: 10px;
+}
+.tooltip{
+    text-align: center;
+    position: absolute;
+    bottom:100%;
+    right: 50%;
+    transform: translateX(50%);
+    padding-bottom: 10px;
 }
 /* ==============商品詳情區塊============== */
 .product-detail{
@@ -480,6 +501,9 @@ main{
     padding-top: 5px;
     color: #fff;
 }
+.smallCard a{
+    margin-top: auto;
+}
 .smallCard-detail-btn{
     width: 100%;
     font-weight: 400;
@@ -487,9 +511,13 @@ main{
     background-color: #deaa40;
     color: #000;
     text-align: center;
-    margin-top: 10px;
     cursor: pointer;
-    margin-top: auto;
+
+}
+.smallCard-detail-btn:active{
+    color: #fff;
+    background-color: #684f1e;
+    transition: 0.1s;
 }
 .card-pic{
     position: relative;

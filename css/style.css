@@ -902,6 +902,9 @@ main{
     padding-top: 5px;
     color: #fff;
 }
+.smallCard a{
+    margin-top: auto;
+}
 .smallCard-detail-btn{
     width: 100%;
     font-weight: 400;
@@ -909,9 +912,7 @@ main{
     background-color: #deaa40;
     color: #000;
     text-align: center;
-    margin-top: 10px;
     cursor: pointer;
-    margin-top: auto;
 }
 .smallCard-detail-btn:active{
     color: #fff;

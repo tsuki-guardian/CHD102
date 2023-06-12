@@ -160,9 +160,9 @@
                                     <div class="price-btn">
                                         <a href="#" class="add-to-cart">加入購物車</a>
                                         <a href="#" class="checkout">立即結帳</a>
-                                        <div class="add-to-favorite">
+                                        <div class="add-to-favorite" id="favorite">
                                             <i class="fa-regular fa-heart"></i>
-                                            <p>收藏</p>
+                                            <p>&ensp;收藏&ensp;</p>
                                         </div>
                                     </div>
                                 </div>
@@ -456,5 +456,31 @@
           }
         });
       </script>
+
+      <script>
+        //加入收藏 或 取消收藏
+        let setFavorite = $('#favorite');
+        let heartSymbol = $('.add-to-favorite i');
+        let favoriteText = $('.add-to-favorite p');
+
+        setFavorite.click(function(){
+            let className = heartSymbol.attr('class');
+            let color = heartSymbol.attr('style');
+
+            if (className.includes('fa-regular')){
+                className = className.replace('fa-regular', 'fa-solid');
+                heartSymbol.css('color', '#A94A4A');
+                favoriteText.text('已收藏');
+
+                } else if (className.includes('fa-solid')){
+                className = className.replace('fa-solid', 'fa-regular');
+                heartSymbol.css('color', '#fff');
+                favoriteText.html('&ensp;收藏&ensp;');
+                }
+
+                heartSymbol.attr('class', className);
+
+          });
+        </script>
 </body>
 </html>
