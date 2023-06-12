@@ -105,15 +105,20 @@ main{
     padding-top: 20px;
     user-select: none;
 }
-@media screen and (min-width: 414px){
+@media screen and (min-width: 500px){
     .filter {
         flex-wrap: nowrap;
     }
 }
 .custom-select {
-    width: 230px;
+    width: 100%;
     position: relative;
     display: inline-block;
+}
+@media screen and (min-width: 500px){
+    .custom-select {
+        width: 230px;
+    }
 }
 .select-trigger {
     position: relative;
@@ -161,19 +166,11 @@ main{
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
-    order:0;
-}
-@media screen and (min-width: 414px){
-    .filter-btn{
-    }
 }
 .filter-cancel{
     width: 70px;
     display: inline-block;
-    /* background-color: #de404080;
-    border: 1px solid #de4040; */
     color: #ccc;
-    /* padding: 10px; */
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
