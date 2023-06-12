@@ -97,12 +97,18 @@ main{
 /* =========篩選器=================== */
 .filter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
     color: #333;
     padding-top: 20px;
     user-select: none;
+}
+@media screen and (min-width: 414px){
+    .filter {
+        flex-wrap: nowrap;
+    }
 }
 .custom-select {
     width: 230px;
@@ -155,6 +161,11 @@ main{
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
+    order:0;
+}
+@media screen and (min-width: 414px){
+    .filter-btn{
+    }
 }
 .filter-cancel{
     width: 70px;

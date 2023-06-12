@@ -4,7 +4,7 @@ body{
 a{
     text-decoration: none;
 }
-/* ================================================ */
+/* =====================header===================== */
 .mobile-logo{
     text-align: center;
     /* padding: 100px 0; */
@@ -124,6 +124,7 @@ a{
     justify-content: space-evenly;
     height: 400px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 .navList-content li{
     position: relative;
@@ -309,6 +310,7 @@ a{
     flex-direction: row;
     height: 80px;
     margin-bottom: 0;
+    font-size: inherit;
 }
 .navList-content li:nth-child(1){
     display: none;
@@ -411,18 +413,10 @@ a{
         padding: 0;
     }
 }
-/* ====================min1440===================== */
-@media screen and (min-width:1440px){
-
-}
-/* =====================header===================== */
-
-
 /* ====================footer===================== */
 .todomain-footer{
     width: 100%;
-    margin-top: 200px;
-    height: 300px;
+    margin-top: 100px;
     text-align: center;
     background-color: #000;
     font-size: 0;
@@ -437,18 +431,32 @@ a{
     width: 100%;
 }
 .footer-logo{
-    padding-top: 80px;
+    margin: 40px 0;
+}
+@media screen and (min-width: 768px){
+    .footer-logo{
+        margin: 60px 0;
+    }
 }
 .footer-logo img{
     width: 100%;
-    max-width: 350px;
+    max-width: 250px;
+}
+@media screen and (min-width: 768px){
+    .footer-logo img{
+        max-width: 350px;
+    }
 }
 .copy-right{
-    padding-top: 60px;
+    padding-bottom: 100px;
     font-size: 12px;
     color: #fff;
 }
-
+@media screen and (min-width: 768px){
+    .copy-right{
+        padding-bottom: 60px;
+    }
+}
 /* ====================go-Top===================== */
 #myBtn {
     display: none; 
@@ -461,7 +469,7 @@ a{
     background-color: #deaa4077; 
     color: #deaa40; 
     cursor: pointer; 
-    padding: 25px; 
+    padding: 10px; 
   }
   
   #myBtn:hover {
@@ -470,11 +478,15 @@ a{
     transition: .2s;
   }
   .fa-angles-up{
-    font-size: 30px;
+    font-size: 24px;
   }
 @media screen and (min-width:768px){
   #myBtn {
     bottom: 20px; 
+    padding: 25px; 
+  }
+  .fa-angles-up{
+    font-size: 30px;
   }
 }
   /* ========================================== */
