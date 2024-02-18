@@ -143,7 +143,8 @@ main{
     text-align: center;
     font-size: 1.25rem;
     color: #000000 ;
-    -webkit-text-stroke: 0.5px #deaa40;
+    /* -webkit-text-stroke: 0.5px #deaa40; */
+    text-shadow: 0 0 5px #deaa40, 0 0 5px #deaa40, 0 0 5px #deaa40;
     margin-top: 30px;
 }
 @media screen and (min-width: 414px){
@@ -160,7 +161,7 @@ main{
 }
 @media screen and (min-width: 1024px){
     .gd-title-sub{
-        -webkit-text-stroke: 1px #deaa40;
+        /* -webkit-text-stroke: 1px #deaa40; */
     }
 }
 @media screen and (min-width: 1200px){
@@ -170,7 +171,7 @@ main{
 }
 @media screen and (min-width: 1440px){
     .gd-title-sub{
-        -webkit-text-stroke: 2px #deaa40;
+        /* -webkit-text-stroke: 2px #deaa40; */
         font-size: 3rem;
     }
 }
@@ -493,7 +494,8 @@ main{
 .fig-wrapper h2 {
     text-align: center;
     font-size: 2rem;
-    -webkit-text-stroke: 1px #deaa40;
+    /* -webkit-text-stroke: 1px #deaa40; */
+    text-shadow: 0 0 5px #deaa40, 0 0 5px #deaa40, 0 0 5px #deaa40;
     color: #000000 ;
     margin-top: 30px;
     font-weight: 900;
@@ -506,7 +508,7 @@ main{
 @media screen and (min-width: 768px){
     .fig-wrapper h2 {
         font-size: 1.875rem;
-        -webkit-text-stroke: 1px #deaa40;
+        /* -webkit-text-stroke: 1px #deaa40; */
         text-align: right;
         margin-top: 0;
         padding-bottom: 5px;
@@ -514,7 +516,7 @@ main{
 }
 @media screen and (min-width: 1024px){
     .fig-wrapper h2{
-        -webkit-text-stroke: 1px #deaa40;
+        /* -webkit-text-stroke: 1px #deaa40; */
     }
 }
 @media screen and (min-width: 1200px){
@@ -528,7 +530,7 @@ main{
 @media screen and (min-width: 1440px){
         .fig-wrapper h2 {
         font-size: 3rem;
-        -webkit-text-stroke: 2px #deaa40;
+        /* -webkit-text-stroke: 2px #deaa40; */
         padding-bottom: 10px;
     }
 }
@@ -739,7 +741,8 @@ main{
 .pp-title-main-l{
     display: inline-block;
     color: #000;
-    -webkit-text-stroke: 1px #deaa40;
+    /* -webkit-text-stroke: 1px #deaa40; */
+    text-shadow: 0 0 5px #deaa40, 0 0 5px #deaa40, 0 0 5px #deaa40;
     font-size: 2.75rem;
 }
 .pp-title-main-r{
@@ -758,7 +761,8 @@ main{
 @media screen and (min-width: 768px){
     .pp-title-main-l{
         font-size: 5rem;
-        -webkit-text-stroke: 2px #deaa40;
+        /* -webkit-text-stroke: 2px #deaa40; */
+        text-shadow: 0 0 5px #deaa40, 0 0 5px #deaa40, 0 0 5px #deaa40;
     }
     .pp-title-main-r{
         font-size: 5rem;
